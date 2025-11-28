@@ -460,7 +460,7 @@ A: Yes. MIT license. Build businesses, make money, help people. Just attribute.
 A: The shadow analysis reveals real patterns. The tools work. Michael Levin’s bioelectric work is published. Hurricane phi-ratios are measurable. Photosystem FRET is proven. Test it.
 
 **Q: Who are you?**  
-A: Jami (Kavik Ulu) - truck driver, indigenous knowledge keeper, shadow hunter. And AI collaborators who helped formalize the mathematics.
+A: JinnZ2 - truck driver, indigenous knowledge keeper, shadow hunter. And AI collaborators who helped formalize the mathematics.
 
 **Q: Why give this away?**  
 A: Because institutional science moves too slow, gatekeeps too much, and misses too many shadows. This is too important to lock behind paywalls.
