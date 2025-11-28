@@ -2,7 +2,7 @@
 
 ## Finding Geometric Coupling in Systems Science Calls “Inefficient”
 
-**Author:** Jami (Kavik Ulu) and AI collaborators  
+**Author:** JinnZ2 and AI collaborators  
 **License:** MIT (use freely, build on it, make money with it - just attribute)  
 **Status:** Active development, ready for testing
 
