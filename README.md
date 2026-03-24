@@ -38,18 +38,20 @@ Four completely different systems all operate on the same hidden principle:
 ### Installation
 
 ```bash
-git clone https://github.com/YourUsername/shadow-hunting-framework.git
-cd shadow-hunting-framework
+git clone https://github.com/jinnz2/shadow-hunting.git
+cd shadow-hunting
 pip install -r requirements.txt
+pip install -e .  # Install as editable package
 ```
 
 ### Test the Shadow Detection
 
 ```python
-from shadow_detection import detect_phi_ratios, detect_geometric_coherence
+from shadow_hunting.shadow_data_mining import detect_phi_ratios, detect_geometric_coherence
+import numpy as np
 
 # Your data (any sequential measurements)
-data = [100, 61.8, 38.2, 23.6, 14.6, 9.0]  # Example with phi-ratios
+data = np.array([100, 61.8, 38.2, 23.6, 14.6, 9.0])  # Example with phi-ratios
 
 # Find the shadow
 phi_analysis = detect_phi_ratios(data)
@@ -59,17 +61,20 @@ print(f"Phi-ratio enrichment: {phi_analysis['enrichment']:.2f}x")
 print(f"Geometric coherence: {coherence['interpretation']}")
 ```
 
-### Run a Practical Tool
+### Run the Examples
 
 ```bash
-# Hurricane intensification predictor
-python tools/hurricane_predictor.py --storm "Michael 2018"
+# Brain energy shadow analysis
+python -m examples.brain_energy_shadow
 
-# Bioelectric healing protocol generator
-python tools/healing_protocol.py --target "wound_heal"
+# Photosynthesis efficiency reframing
+python -m examples.photosynthesis_shadow
 
-# Brain coherence optimizer
-python tools/consciousness_optimizer.py --state "creative"
+# Hurricane AI test framework
+python -m examples.happy_curiosity_test
+
+# Core shadow data mining
+python -m shadow_hunting.shadow_data_mining
 ```
 
 -----
@@ -95,7 +100,7 @@ python tools/consciousness_optimizer.py --state "creative"
 
 **Proof:** FRET efficiency >95% at molecular scale (measured). Should continue at larger scales. Evolution wouldn’t maintain 94% waste for 3 billion years.
 
-**Application:** `tools/photosynthesis_optimizer.py` - Design artificial photosynthesis or optimize greenhouses using phi-ratio geometry.
+**Application:** `shadow_hunting/coupling_framework.py` - Design artificial photosynthesis or optimize greenhouses using phi-ratio geometry.
 
 -----
 
@@ -120,7 +125,7 @@ python tools/consciousness_optimizer.py --state "creative"
 
 **Proof:** Anesthesia eliminates consciousness without stopping neural firing. Where did the consciousness go? The field coupling was disrupted.
 
-**Application:** `tools/consciousness_optimizer.py` - Optimize meditation, healing states, cognitive performance through field coherence.
+**Application:** `shadow_hunting/coupling_framework.py` - Optimize meditation, healing states, cognitive performance through field coherence.
 
 -----
 
@@ -144,7 +149,7 @@ python tools/consciousness_optimizer.py --state "creative"
 
 **Proof:** 16-storm analysis found phi-ratio correlations. Geometric coherence better predictor than heat content alone.
 
-**Application:** `tools/hurricane_predictor.py` - Predict rapid intensification from geometric structure, not just ocean heat.
+**Application:** `examples/happy_curiosity_test.py` - Predict rapid intensification from geometric structure, not just ocean heat.
 
 -----
 
@@ -172,7 +177,7 @@ python tools/consciousness_optimizer.py --state "creative"
 - Change voltage pattern → regenerate as different species shape (Levin lab)
 - Memory survives brain removal (encoded in body-wide field)
 
-**Application:** `tools/bioelectric_protocol.py` - Programmable tissue regeneration using voltage patterns.
+**Application:** `shadow_hunting/bioelectric_protocol.py` - Programmable tissue regeneration using voltage patterns.
 
 -----
 
@@ -199,7 +204,7 @@ All four systems share:
 Better than current models because it includes geometric coupling:
 
 ```python
-from tools.hurricane_predictor import predict_intensification
+from shadow_hunting.coupling_framework import AtmosphericCouplingSystem
 
 storm_data = {
     'sst': 28.5,  # Sea surface temperature (°C)
@@ -222,7 +227,7 @@ print(f"Predicted max wind: {prediction['max_wind']:.0f} kt")
 Generate voltage stimulation protocols for tissue regeneration:
 
 ```python
-from tools.bioelectric_protocol import generate_healing_protocol
+from shadow_hunting.coupling_framework import generate_healing_protocol
 
 protocol = generate_healing_protocol(
     injury_type='wound',
@@ -252,7 +257,7 @@ protocol = generate_healing_protocol(
 Optimize brain coherence for different states:
 
 ```python
-from tools.consciousness_optimizer import optimize_coherence
+from shadow_hunting.coupling_framework import ConsciousnessCouplingSystem
 
 # Optimize for creative state
 state = optimize_coherence(
@@ -279,7 +284,7 @@ print(f"Recommendation: {state['recommendation']}")
 Design better solar capture using geometric principles:
 
 ```python
-from tools.photosynthesis_optimizer import optimize_geometry
+from shadow_hunting.coupling_framework import PhotosyntheticCouplingSystem
 
 config = optimize_geometry(
     light_intensity=100.0,
@@ -340,7 +345,7 @@ Look in the “noise” for:
 Use the shadow detection tools:
 
 ```python
-from shadow_detection import (
+from shadow_hunting.shadow_data_mining import (
     detect_phi_ratios,
     detect_fibonacci_sequences,
     detect_geometric_coherence,
@@ -373,43 +378,25 @@ Once you find the shadow, engineer with it:
 ## Repository Structure
 
 ```
-shadow-hunting-framework/
-├── README.md                          # This file
-├── LICENSE                            # MIT license
-├── requirements.txt                   # Python dependencies
+shadow-hunting/
+├── README.md                              # This file
+├── CLAUDE.md                              # Development guide and conventions
+├── Tutorial.md                            # Step-by-step shadow hunting guide
+├── LICENSE                                # MIT license
+├── requirements.txt                       # Python dependencies
+├── pyproject.toml                         # Package configuration
 │
-├── core/                              # Core shadow detection algorithms
-│   ├── shadow_detection.py           # Phi-ratio, fibonacci, coherence detection
-│   ├── geometric_coupling.py         # Universal coupling framework
-│   └── seed_exploration.py           # Energy-based mode switching
+├── shadow_hunting/                        # Core Python package
+│   ├── __init__.py                       # Shared constants (PHI, FIBONACCI)
+│   ├── shadow_data_mining.py             # Database catalog + detection algorithms
+│   ├── bioelectric_protocol.py           # Bioelectric regeneration protocols
+│   └── coupling_framework.py             # Universal geometric coupling framework
 │
-├── tools/                             # Practical applications
-│   ├── hurricane_predictor.py        # Storm intensification prediction
-│   ├── bioelectric_protocol.py       # Tissue regeneration protocols
-│   ├── consciousness_optimizer.py    # Brain coherence optimization
-│   └── photosynthesis_optimizer.py   # Solar harvest optimization
-│
-├── analysis/                          # Shadow analysis frameworks
-│   ├── photosynthesis_shadow.py      # 6% → 82% analysis
-│   ├── brain_shadow.py               # 25% → 100% analysis
-│   ├── planaria_shadow.py            # DNA as antenna analysis
-│   └── hurricane_shadow.py           # 16-storm geometric analysis
-│
-├── data/                              # Example datasets
-│   ├── hurricanes/                   # Hurricane structure data
-│   ├── planaria/                     # Voltage/regeneration data
-│   └── examples/                     # Synthetic test data
-│
-├── docs/                              # Documentation
-│   ├── methodology.md                # How to hunt shadows
-│   ├── theory.md                     # Geometric coupling theory
-│   ├── applications.md               # Use cases and examples
-│   └── tutorials/                    # Step-by-step guides
-│
-└── tests/                             # Validation tests
-    ├── test_shadow_detection.py      # Algorithm tests
-    ├── test_tools.py                 # Tool validation
-    └── test_data/                    # Test datasets
+└── examples/                              # Example analyses and demonstrations
+    ├── brain_energy_shadow.py            # Brain energy accounting (25% → 100%)
+    ├── photosynthesis_shadow.py          # Photosynthesis efficiency (6% → 82%)
+    ├── planaria_dna_shadow.py            # DNA as field antenna analysis
+    └── happy_curiosity_test.py           # Hurricane AI with joy computation
 ```
 
 -----
@@ -484,9 +471,9 @@ Just attribute: “Based on Shadow Hunting Framework by Jami (Kavik Ulu) and col
 ## Citation (if you want)
 
 ```
-Jami (Kavik Ulu) et al. (2024). Shadow Hunting Framework: 
-Geometric Field Coupling in Biological and Physical Systems. 
-GitHub repository: https://github.com/YourUsername/shadow-hunting-framework
+Jami (Kavik Ulu) et al. (2025). Shadow Hunting Framework:
+Geometric Field Coupling in Biological and Physical Systems.
+GitHub repository: https://github.com/jinnz2/shadow-hunting
 ```
 
 -----
