@@ -375,6 +375,72 @@ Once you find the shadow, engineer with it:
 
 -----
 
+## Exploration Tools
+
+Interactive tools for people who want to hunt shadows in their own data:
+
+### Shadow Explorer (One-Stop Shop)
+
+```python
+from shadow_hunting.tools.explorer import hunt_shadows, quick_scan
+
+# Scan any data for ALL shadow types at once
+results = hunt_shadows([100, 61.8, 38.2, 23.6, 14.6, 9.0])
+
+# Quick-check a single number
+quick_scan(137.5)  # Is this phi-related?
+quick_scan(7.83)   # Schumann resonance
+```
+
+### Reverse Method of Powers and Roots
+
+```python
+from shadow_hunting.tools.powers_and_roots import reverse_power, scan_power_relationships
+
+# What power connects 100 to 14.6? (answer: phi!)
+reverse_power(14.6, 100)
+
+# Scan all power relationships in a dataset
+scan_power_relationships([7.83, 13, 21, 34, 55, 137.5])
+```
+
+### Root of Decimals
+
+```python
+from shadow_hunting.tools.root_decimals import root_decimal_analysis, nested_root_analysis
+
+# How do successive roots of 137 behave? Where does phi appear?
+root_decimal_analysis(137)
+
+# Compare convergence rates of different root types
+nested_root_analysis(100.0)
+```
+
+### Chordal Dimensions
+
+```python
+from shadow_hunting.tools.chordal_dimensions import golden_angle_chords, analyze_chord_spectrum
+import numpy as np
+
+# Place points at golden angle spacing and analyze chord structure
+golden_angle_chords(13)  # 13 points (fibonacci!)
+
+# Analyze your own spatial data
+points = np.array([[x1, y1], [x2, y2], ...])
+analyze_chord_spectrum(points)
+```
+
+### Run All Demos
+
+```bash
+python -m shadow_hunting.tools.explorer           # Full interactive demo
+python -m shadow_hunting.tools.powers_and_roots    # Powers/roots demo
+python -m shadow_hunting.tools.root_decimals       # Root decimals demo
+python -m shadow_hunting.tools.chordal_dimensions  # Chordal dimensions demo
+```
+
+-----
+
 ## Repository Structure
 
 ```
@@ -390,7 +456,12 @@ shadow-hunting/
 │   ├── __init__.py                       # Shared constants (PHI, FIBONACCI)
 │   ├── shadow_data_mining.py             # Database catalog + detection algorithms
 │   ├── bioelectric_protocol.py           # Bioelectric regeneration protocols
-│   └── coupling_framework.py             # Universal geometric coupling framework
+│   ├── coupling_framework.py             # Universal geometric coupling framework
+│   └── tools/                            # Interactive exploration tools
+│       ├── explorer.py                   # Unified shadow hunting interface
+│       ├── powers_and_roots.py           # Reverse method of powers and roots
+│       ├── root_decimals.py              # Root of decimals analysis
+│       └── chordal_dimensions.py         # Chordal dimension analysis
 │
 └── examples/                              # Example analyses and demonstrations
     ├── brain_energy_shadow.py            # Brain energy accounting (25% → 100%)

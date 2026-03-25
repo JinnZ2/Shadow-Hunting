@@ -19,7 +19,13 @@ shadow-hunting/
 │   ├── __init__.py          # Shared constants (PHI, FIBONACCI) and package info
 │   ├── shadow_data_mining.py    # Database catalog + shadow detection algorithms
 │   ├── bioelectric_protocol.py  # Bioelectric tissue regeneration protocols
-│   └── coupling_framework.py    # Universal geometric coupling framework
+│   ├── coupling_framework.py    # Universal geometric coupling framework
+│   └── tools/                   # Interactive exploration tools
+│       ├── __init__.py          # Tool exports (hunt_shadows, quick_scan)
+│       ├── explorer.py          # Unified shadow hunting interface
+│       ├── powers_and_roots.py  # Reverse method of powers and roots
+│       ├── root_decimals.py     # Root of decimals analysis
+│       └── chordal_dimensions.py # Chordal dimension analysis
 │
 └── examples/                # Example analyses and demonstrations
     ├── brain_energy_shadow.py       # Brain energy accounting analysis
@@ -69,6 +75,12 @@ python -m examples.happy_curiosity_test
 python -m shadow_hunting.shadow_data_mining
 python -m shadow_hunting.bioelectric_protocol
 python -m shadow_hunting.coupling_framework
+
+# Run exploration tools
+python -m shadow_hunting.tools.explorer
+python -m shadow_hunting.tools.powers_and_roots
+python -m shadow_hunting.tools.root_decimals
+python -m shadow_hunting.tools.chordal_dimensions
 ```
 
 ## Architecture Notes
@@ -78,3 +90,8 @@ python -m shadow_hunting.coupling_framework
 - `coupling_framework.py` provides the universal `GeometricCouplingSystem` base class
 - `bioelectric_protocol.py` contains the `MorphogeneticField` and `RegenerationSimulator` classes
 - Example files are standalone analyses that demonstrate the framework on specific systems
+- `tools/` provides interactive exploration tools:
+  - `explorer.py`: Unified `hunt_shadows()` interface — runs all detectors on any data
+  - `powers_and_roots.py`: Reverse-engineer power/root relationships, find phi in exponents
+  - `root_decimals.py`: Analyze decimal structure of nth roots for hidden patterns
+  - `chordal_dimensions.py`: Chord geometry analysis, golden angle spacing, dimensional coupling
