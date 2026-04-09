@@ -497,10 +497,12 @@ Testable predictions (hypotheses to validate):
    - Test: Quantify energy budget for known signaling pathways
    - Note: Individual signaling functions are established; total budget is not
 
-5. FRET SCALING (IMPORTANT CAVEAT)
-   - FRET is proven >95% efficient at molecular scale (1-10 nm)
-   - FRET does NOT scale to larger distances (1/r^6 dependence)
-   - At larger scales, different mechanisms operate
+5. FRET AND EXTENDED-RANGE RET
+   - Classical FRET is >95% efficient at molecular scale (~1-10 nm, 1/r^6)
+   - Extended mechanisms push RET beyond classical limits:
+     NSET (1/r^4, ~20+ nm), plasmon relay, BIC-mediated transfer
+   - Whether extended RET operates in intact biological systems at
+     tissue scale or beyond is an active research question
    - The "82% efficiency" claim requires independent measurement
 """)
 

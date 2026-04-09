@@ -12,8 +12,11 @@ The Hypothesis = Some "waste" energy may serve functional roles worth investigat
 
 NOTE: The energy allocations in this analysis are speculative estimates, not
 measured values. Standard calorimetry is well-validated. FRET operates at
-molecular scale (~1-10 nm) and does not scale to larger distances due to
-1/r^6 dependence. The "82% efficiency" figure is a hypothetical upper bound.
+molecular scale (~1-10 nm) via classical 1/r^6 Forster coupling. Extended-range
+mechanisms (NSET at 1/r^4, plasmon relay, BIC-mediated transfer) push resonance
+energy transfer beyond 10 nm and are active research areas. Whether such
+mechanisms operate in intact biological systems at tissue scale is an open
+question. The "82% efficiency" figure is a hypothetical upper bound.
 """
 
 import numpy as np
@@ -97,7 +100,7 @@ def photosynthesis_shadow_map():
                 'Convection current generation (nutrient transport)',
                 'Microbial activity stimulation in soil',
                 'Mycorrhizal network interactions',
-                'Note: "FRET-like" is metaphorical — actual FRET requires nm-scale distances'
+                'Extended-range RET mechanisms (NSET, plasmon, BIC) may apply — active research area'
             ],
             'measurement_gap': 'Thermal energy destinations are partially characterized but not fully budgeted'
         },
@@ -286,14 +289,15 @@ def photosynthesis_as_fret_network():
     """
     Explore energy transfer mechanisms at different scales.
 
-    NOTE: True FRET (Forster Resonance Energy Transfer) operates only at
-    molecular scale (~1-10 nm) due to 1/r^6 distance dependence. At larger
-    scales, different mechanisms operate (radiative transfer, convection,
-    conduction). The term "FRET-like" at macro scales is metaphorical.
+    Classical Forster FRET operates at molecular scale (~1-10 nm) via 1/r^6
+    coupling. Extended-range mechanisms — NSET (1/r^4, ~20+ nm), plasmon-enhanced
+    relay, and BIC-mediated transfer — are proven to extend resonance energy
+    transfer beyond classical limits. Whether these mechanisms operate in intact
+    biological systems at tissue or canopy scale is an open research question.
     """
 
     print("\n" + "="*80)
-    print("ENERGY TRANSFER ACROSS SCALES (FRET at molecular scale only)")
+    print("ENERGY TRANSFER ACROSS SCALES")
     print("="*80)
 
     fret_scales = {
@@ -316,7 +320,7 @@ def photosynthesis_as_fret_network():
                 'Photosystem II → Photosystem I'
             ],
             'measured_efficiency': 'Electron transport chain efficiency well-characterized',
-            'coupling_type': 'Electron transport, proton gradients (not FRET at this scale)',
+            'coupling_type': 'Electron transport, proton gradients; extended RET mechanisms possible',
             'geometric_organization': 'Grana stacking optimizes membrane packing'
         },
 
@@ -328,7 +332,7 @@ def photosynthesis_as_fret_network():
                 'Chloroplast → Chloroplast via cytoplasm'
             ],
             'measured_efficiency': 'Light scattering increases path length (well-studied)',
-            'coupling_type': 'Radiative transfer, light scattering (FRET impossible at cm scale)',
+            'coupling_type': 'Radiative transfer, light scattering; RET at this scale undemonstrated',
             'geometric_organization': 'Leaf vein networks show branching patterns'
         },
 
@@ -340,7 +344,7 @@ def photosynthesis_as_fret_network():
                 'Canopy → Understory'
             ],
             'measured_efficiency': 'Canopy radiative transfer is modeled',
-            'coupling_type': 'Radiative transfer, convection, conduction (not FRET)',
+            'coupling_type': 'Radiative transfer, convection, conduction; RET at this scale undemonstrated',
             'geometric_organization': 'Canopy architecture optimizes light capture'
         },
 
@@ -367,13 +371,14 @@ def photosynthesis_as_fret_network():
         print(f"  Geometric organization: {details['geometric_organization']}")
 
     print("\n" + "="*80)
-    print("KEY OBSERVATION:")
-    print("FRET operates at molecular scale (95-99% efficient, proven).")
-    print("At larger scales, FRET does NOT operate (1/r^6 dependence).")
-    print("Different energy transfer mechanisms apply at each scale.")
-    print("Geometric organization exists at multiple scales, but the")
-    print("mechanisms are distinct — not a single 'FRET network.'")
-    print("The hypothesis: geometric patterns may optimize each mechanism.")
+    print("KEY OBSERVATIONS:")
+    print("Classical FRET operates at molecular scale (95-99% efficient, proven).")
+    print("Extended-range RET mechanisms (NSET, plasmon relay, BIC) push")
+    print("resonance energy transfer beyond the classical 10 nm limit.")
+    print("Whether such mechanisms operate in intact biological systems at")
+    print("tissue or larger scales is an active research question.")
+    print("Geometric organization exists at multiple scales — the hypothesis")
+    print("is that geometric patterns may optimize energy transfer at each scale.")
     print("="*80)
 
 # =============================================================================
@@ -487,10 +492,12 @@ if __name__ == "__main__":
     4. Spatial boundary: canopy-level coordination
     5. Information boundary: light as signal, not just energy
 
-    FRET is proven at molecular scale (nm). At larger scales,
-    different mechanisms (radiative transfer, convection) operate.
-    Geometric patterns exist at multiple scales but do not imply
-    a single coupling mechanism across all scales.
+    Classical FRET is proven at molecular scale (nm). Extended-range
+    RET mechanisms (NSET, plasmon relay, BIC) push beyond 10 nm.
+    Whether resonance energy transfer operates in biological systems
+    at tissue scale or beyond is an active research question.
+    Geometric patterns exist at multiple scales — whether they
+    reflect a shared coupling mechanism needs experimental evidence.
     """)
 
     print("="*80)

@@ -431,7 +431,7 @@ def hunt_multi_scale_shadow(system):
         },
         'Canopy (m)': {
             'measured': 'Canopy radiative transfer (modeled)',
-            'shadow': 'Note: FRET does NOT operate at this scale (1/r^6 decay)'
+            'shadow': 'Classical FRET has 1/r^6 limit; extended RET mechanisms are research frontier'
         },
         'Forest (km)': {
             'measured': 'Earth system energy budgets (well-characterized)',

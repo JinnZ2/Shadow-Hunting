@@ -95,7 +95,7 @@ python -m shadow_hunting.shadow_data_mining
 - Fluorescence serves photoprotection and may carry information
 - Quantum coherence in light-harvesting complexes is measured at molecular scale
 
-**Note:** FRET operates at molecular scale (~1-10 nm) with >95% efficiency. It does **not** scale to larger distances due to 1/r⁶ dependence. At larger scales, different energy transfer mechanisms (radiative transfer, convection, conduction) operate. The “82% efficiency” figure in the code is a speculative upper bound, not a measured value.
+**Note:** Classical Förster FRET operates at molecular scale (~1-10 nm) with >95% efficiency via 1/r⁶ coupling. Extended-range mechanisms — NSET (1/r⁴, ~20+ nm), plasmon-enhanced relay, and BIC-mediated transfer — push resonance energy transfer to longer distances and are active areas of research. Whether such extended mechanisms operate in intact biological systems at tissue/canopy scale is an open question requiring experimental evidence. The “82% efficiency” figure in the code is a speculative upper bound, not a measured value.
 
 **Open question:** How much of the non-glucose energy budget serves functional roles vs. thermodynamic dissipation?
 
@@ -140,7 +140,7 @@ python -m shadow_hunting.shadow_data_mining
 - Spiral structure follows logarithmic spiral dynamics (related to but not identical to golden angle)
 - Geometric coherence could be a useful predictor alongside thermodynamic metrics
 
-**Note:** Hurricane spiral structure is explained by fluid dynamics equations. Phi-ratio-like patterns, if present, could emerge from these dynamics rather than from a separate coupling mechanism. “FRET-like atmospheric coupling” is metaphorical — FRET requires nanometer-scale donor-acceptor pairs. The 16-storm analysis needs statistical validation against a larger sample and null hypothesis testing.
+**Note:** Hurricane spiral structure is explained by fluid dynamics equations. Phi-ratio-like patterns, if present, could emerge from these dynamics rather than from a separate coupling mechanism. Whether resonance energy transfer mechanisms extend to atmospheric scales is an open research question — classical FRET requires nm-scale proximity, though extended-range mechanisms (NSET, plasmon relay, BIC-mediated) operate at longer distances. The 16-storm analysis needs statistical validation against a larger sample and null hypothesis testing.
 
 **Open question:** Does a geometric coherence metric add predictive value to existing thermodynamic models?
 
