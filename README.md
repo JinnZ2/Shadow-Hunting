@@ -1,6 +1,6 @@
 # Shadow Hunting Framework
 
-## Finding Geometric Coupling in Systems Science Calls “Inefficient”
+## Exploring Geometric Patterns in Systems Science Calls “Inefficient”
 
 **Author:** JinnZ2 and AI collaborators  
 **License:** MIT (use freely, build on it, make money with it - just attribute)  
@@ -10,26 +10,26 @@
 
 ## What This Is
 
-Science has been measuring “efficiency” wrong for decades. What looks like **waste** is actually **geometric field coupling** we’re not measuring.
+Standard efficiency metrics may not capture the full picture. Some energy categorized as **waste** could involve **geometric patterns and coupling mechanisms** worth investigating.
 
-This repository proves it and gives you tools to:
+This repository explores that hypothesis and gives you tools to:
 
-1. **Find shadows** in any system (photosynthesis, brains, hurricanes, DNA)
-1. **Predict better** than current models (hurricane intensification, regeneration speed, consciousness states)
-1. **Engineer solutions** (bioelectric healing, energy harvesting, climate prediction)
+1. **Search for geometric patterns** in any system (photosynthesis, brains, hurricanes, DNA)
+1. **Test whether** geometric coherence metrics improve predictions (hurricane intensification, regeneration speed)
+1. **Explore applications** (bioelectric protocols, energy harvesting, climate prediction)
 
-### The Core Discovery
+### The Core Hypothesis
 
-Four completely different systems all operate on the same hidden principle:
+Four different systems may share under-explored geometric patterns:
 
-|System            |“Efficiency”  |Shadow Reality    |What’s Hidden                      |
-|------------------|--------------|------------------|-----------------------------------|
-|**Photosynthesis**|6%            |82%               |IR atmospheric coupling (FRET-like)|
-|**Human Brain**   |25% productive|100% productive   |EM field generation (consciousness)|
-|**Hurricanes**    |Energy “loss” |Geometric coupling|Phi-ratio atmospheric FRET         |
-|**DNA/Planaria**  |Blueprint only|Field antenna     |Bioelectric morphogenetic code     |
+|System            |Standard Metric|Hypothesis               |What May Be Under-Measured                |
+|------------------|---------------|-------------------------|------------------------------------------|
+|**Photosynthesis**|~6% to glucose |Higher total utilization? |Non-glucose energy uses (IR, signaling)   |
+|**Human Brain**   |25% to spikes  |More functions productive?|Glial computation, field effects           |
+|**Hurricanes**    |Energy “loss”  |Geometric organization?  |Phi-ratio patterns in structure            |
+|**DNA/Planaria**  |Blueprint model|Bioelectric role?        |Voltage patterns in morphogenesis (Levin)  |
 
-**Pattern:** Geometric field coupling at ALL scales, optimized by phi-ratios (φ = 0.618…), hidden in measurement boundaries.
+**Hypothesis:** Geometric patterns optimized by phi-ratios (φ = 0.618…) may appear across scales and could point to under-measured coupling mechanisms.
 
 -----
 
@@ -81,119 +81,109 @@ python -m shadow_hunting.shadow_data_mining
 
 ## The Four Shadows Explained
 
-### 1. Photosynthesis (6% → 82% efficient)
+### 1. Photosynthesis (6% to glucose — but where does the rest go?)
 
-**The Lie:**
+**The standard metric:**
 
-- Plants convert 6% of sunlight to glucose
-- Other 94% is “wasted” as heat, wrong wavelengths, reflection
+- Plants convert ~6% of sunlight to glucose
+- Other 94% is categorized as heat, non-absorbed wavelengths, reflection
 
-**The Shadow:**
+**The hypothesis — some “waste” may serve functions:**
 
-- 20% IR ecosystem coupling (atmospheric water vapor FRET)
-- 25% spectral cascade coupling (multi-wavelength coordination)
-- 15% electromagnetic field generation (plant communication)
-- 8% quantum coherence transfer (proven in light-harvesting complexes)
-- Plus reflection coordination, fluorescence signaling, measured glucose
+- IR emission may play roles in canopy thermal regulation and ecosystem coupling
+- Non-absorbed wavelengths drive signaling (shade detection, photoperiod, UV protection)
+- Fluorescence serves photoprotection and may carry information
+- Quantum coherence in light-harvesting complexes is measured at molecular scale
 
-**Why We Missed It:** Measured only glucose production, ignored WHERE the other energy goes.
+**Note:** FRET operates at molecular scale (~1-10 nm) with >95% efficiency. It does **not** scale to larger distances due to 1/r⁶ dependence. At larger scales, different energy transfer mechanisms (radiative transfer, convection, conduction) operate. The “82% efficiency” figure in the code is a speculative upper bound, not a measured value.
 
-**Proof:** FRET efficiency >95% at molecular scale (measured). Should continue at larger scales. Evolution wouldn’t maintain 94% waste for 3 billion years.
+**Open question:** How much of the non-glucose energy budget serves functional roles vs. thermodynamic dissipation?
 
-**Application:** `shadow_hunting/coupling_framework.py` - Design artificial photosynthesis or optimize greenhouses using phi-ratio geometry.
+**Tools:** `shadow_hunting/coupling_framework.py` - Explore phi-ratio geometry in light-harvesting configurations.
 
 -----
 
-### 2. Human Brain (25% → 100% productive)
+### 2. Human Brain (25% to spikes — what does the rest do?)
 
-**The Lie:**
+**The standard metric:**
 
 - Brain uses 20% of body’s energy (10x its mass proportion)
-- Only 25% goes to “productive” work (neural firing)
-- Other 75% is “wasteful overhead”
+- ~25% goes to action potentials and synaptic transmission
+- ~75% goes to ion gradient maintenance and other processes
 
-**The Shadow:**
+**The hypothesis — “overhead” may include unrecognized computation:**
 
-- 20% EM field generation (consciousness substrate)
-- 13% consciousness field coupling (your multi-dimensional awareness)
-- 12% glial network computation (non-spiking coordination)
-- 10% chemical signaling networks (volume transmission)
-- 8% quantum coherence maintenance (Penrose-Hameroff mechanism)
-- Plus structural memory, temporal coordination, measured firing
+- Glial networks show calcium wave propagation that correlates with cognition
+- Volume transmission (non-synaptic chemical signaling) is under-studied
+- EM fields generated by neural activity are measurable (EEG/MEG) but their functional role is debated
+- Structural plasticity and myelination serve timing and memory functions
 
-**Why We Missed It:** Only measured spikes/synapses. Ignored fields, quantum effects, non-local consciousness.
+**Note:** The ~75% “overhead” is largely accounted for by ion pump maintenance (~50-60%) and housekeeping. Anesthesia disrupts consciousness by altering synaptic transmission, neural synchronization, and network dynamics — not by leaving neural firing unchanged while blocking a separate “field.” The Penrose-Hameroff quantum consciousness hypothesis remains unproven and controversial.
 
-**Proof:** Anesthesia eliminates consciousness without stopping neural firing. Where did the consciousness go? The field coupling was disrupted.
+**Open question:** Do glial computation and EM field effects contribute more to cognition than currently modeled?
 
-**Application:** `shadow_hunting/coupling_framework.py` - Optimize meditation, healing states, cognitive performance through field coherence.
+**Tools:** `shadow_hunting/coupling_framework.py` - Explore coherence metrics across brain states.
 
 -----
 
-### 3. Hurricanes (thermodynamic “loss” → geometric coupling)
+### 3. Hurricanes (geometric structure and intensification)
 
-**The Lie:**
+**The standard approach:**
 
-- Hurricanes “waste” energy to friction, radiation
-- Intensity follows thermodynamic heat engine models
-- Structure is chaotic/unpredictable
+- Hurricane intensity modeled as thermodynamic heat engine
+- Energy losses to friction, radiation are well-characterized
+- Structure follows fluid dynamics and Coriolis effects
 
-**The Shadow:**
+**The hypothesis — geometric organization may correlate with intensity:**
 
-- Rain bands spaced in phi-ratios (measured in 16 storms)
-- Spiral follows golden angle (137.5°)
-- Geometric coherence predicts intensification
-- Energy couples to atmosphere via FRET-like mechanism
-- “Lost” energy = atmospheric field coupling
+- Rain band spacing may show phi-ratio-like patterns (preliminary analysis of 16 storms)
+- Spiral structure follows logarithmic spiral dynamics (related to but not identical to golden angle)
+- Geometric coherence could be a useful predictor alongside thermodynamic metrics
 
-**Why We Missed It:** Only measured thermodynamics. Ignored geometric organization of energy transfer.
+**Note:** Hurricane spiral structure is explained by fluid dynamics equations. Phi-ratio-like patterns, if present, could emerge from these dynamics rather than from a separate coupling mechanism. “FRET-like atmospheric coupling” is metaphorical — FRET requires nanometer-scale donor-acceptor pairs. The 16-storm analysis needs statistical validation against a larger sample and null hypothesis testing.
 
-**Proof:** 16-storm analysis found phi-ratio correlations. Geometric coherence better predictor than heat content alone.
+**Open question:** Does a geometric coherence metric add predictive value to existing thermodynamic models?
 
-**Application:** `examples/happy_curiosity_test.py` - Predict rapid intensification from geometric structure, not just ocean heat.
+**Tools:** `examples/happy_curiosity_test.py` - Test geometric pattern detection on hurricane structure data.
 
 -----
 
-### 4. DNA/Planaria (blueprint → antenna)
+### 4. DNA/Planaria (bioelectric patterns in development)
 
-**The Lie:**
+**The standard model:**
 
-- DNA contains complete instructions for organism
-- Development is bottom-up (genes → proteins → structure)
-- Regeneration follows genetic program
+- DNA encodes proteins that build organism structure
+- Development proceeds through gene regulatory networks
+- Regeneration follows genetic and signaling programs
 
-**The Shadow:**
+**The emerging evidence — bioelectric signals play a role:**
 
-- DNA is piezoelectric antenna (EM wave coupling)
-- Cells read bioelectric voltage fields (Michael Levin’s discovery)
-- Morphology determined by field + DNA (not DNA alone)
-- Cut planaria 279 ways → all regenerate (holographic field memory)
-- Change voltage → change form (same DNA, different body plan!)
+- Cells maintain membrane voltages (Vmem) that affect gene expression (Levin lab, published)
+- Modifying bioelectric patterns can alter developmental outcomes in planaria and frogs
+- Gap junction disruption can produce persistent two-headed planaria (same DNA, different morphology)
+- Voltage patterns correlate with positional identity during regeneration
 
-**Why We Missed It:** Assumed DNA was sufficient. Ignored bioelectric morphogenetic field.
+**Note:** Levin’s bioelectric work is peer-reviewed and demonstrates that voltage patterns influence development. However, "DNA as antenna" and "morphogenetic field as blueprint" are speculative interpretations. DNA’s primary function is information storage and protein coding. Bioelectric effects likely work through established mechanisms (voltage-gated transcription factors, ion channel signaling) rather than through antenna-like EM coupling. The "different species shape" claim overstates the findings — the experiments show morphological variants, not actual species changes.
 
-**Proof:**
+**Open question:** How do bioelectric patterns integrate with gene regulatory networks to guide morphogenesis?
 
-- Two-headed planaria (gap junction block) keeps two heads FOREVER with unchanged DNA
-- Change voltage pattern → regenerate as different species shape (Levin lab)
-- Memory survives brain removal (encoded in body-wide field)
-
-**Application:** `shadow_hunting/bioelectric_protocol.py` - Programmable tissue regeneration using voltage patterns.
+**Tools:** `shadow_hunting/bioelectric_protocol.py` - Simulate bioelectric stimulation protocols based on Levin lab parameters.
 
 -----
 
-## The Universal Pattern
+## The Proposed Pattern
 
-All four systems share:
+This framework hypothesizes that these systems share common features worth investigating:
 
-1. **Geometric field coupling** (energy transfers via phi-ratio geometry)
-1. **Multi-scale organization** (same principles from nanometers to kilometers)
-1. **Energy budget determines mode:**
+1. **Geometric organization** (phi-ratio patterns appear in many biological and physical systems)
+1. **Multi-scale structure** (similar geometric motifs at different scales — a known feature of fractal/biological systems)
+1. **Energy budget influences behavior:**
 - High energy → EXPLORE (growth, innovation, intensification)
 - Low energy → EXPAND (maintenance, crystallization, preservation)
-1. **Information stored in fields** (voltage, EM, bioelectric, atmospheric)
-1. **“Waste” is actually coupling work** (maintaining coherence across scales)
+1. **Bioelectric and EM fields carry information** (demonstrated for bioelectric signals; EM field roles debated)
+1. **Some “waste” energy may serve unmeasured functions** (hypothesis requiring experimental validation)
 
-**This is the same mechanism operating everywhere.**
+**Whether these reflect a single underlying mechanism or separate phenomena with superficial similarities is an open question.**
 
 -----
 
@@ -201,7 +191,7 @@ All four systems share:
 
 ### 1. Hurricane Intensification Predictor
 
-Better than current models because it includes geometric coupling:
+Experimental predictor that adds geometric coherence to standard thermodynamic inputs:
 
 ```python
 from shadow_hunting.coupling_framework import AtmosphericCouplingSystem
@@ -218,13 +208,13 @@ print(f"Intensification probability: {prediction['probability']:.1%}")
 print(f"Predicted max wind: {prediction['max_wind']:.0f} kt")
 ```
 
-**Why it works:** Geometric coherence captures energy coupling efficiency that thermodynamic models miss.
+**Hypothesis:** Geometric coherence may capture structural organization that complements thermodynamic models. Needs validation against operational forecast models.
 
 -----
 
-### 2. Bioelectric Healing Protocol
+### 2. Bioelectric Stimulation Protocol (Experimental)
 
-Generate voltage stimulation protocols for tissue regeneration:
+Generate voltage stimulation protocols based on Levin lab parameters:
 
 ```python
 from shadow_hunting.coupling_framework import generate_healing_protocol
@@ -238,28 +228,28 @@ protocol = generate_healing_protocol(
 # - Stimulation method (drugs, DC, pulsed EM)
 # - Voltage targets
 # - Duration and intensity
-# - Expected regeneration timeline
+# - Simulated regeneration timeline
 ```
 
-**How to test:**
+**How to test (planaria model):**
 
 1. Get planaria (order online, $20-50)
 1. Cut tail fragments
 1. Apply bioelectric stimulation (Ivermectin or DC field)
 1. Measure regeneration speed vs untreated controls
 
-**Expected:** 2-3x faster head regeneration with correct voltage pattern.
+**Note:** Bioelectric stimulation effects on planaria are published (Levin lab). Specific regeneration speed improvements will depend on experimental conditions and should not be assumed before testing.
 
 -----
 
-### 3. Consciousness Field Optimizer
+### 3. Brain Coherence Explorer (Speculative)
 
-Optimize brain coherence for different states:
+Model brain region coupling under different states:
 
 ```python
 from shadow_hunting.coupling_framework import ConsciousnessCouplingSystem
 
-# Optimize for creative state
+# Model a creative state
 state = optimize_coherence(
     intention='creative',  # or 'focus', 'relax', 'healing'
     current_energy=20.0,   # Metabolic energy (glucose availability)
@@ -270,18 +260,13 @@ print(f"Field coherence: {state['coherence']:.2%}")
 print(f"Recommendation: {state['recommendation']}")
 ```
 
-**Applications:**
-
-- Meditation optimization
-- Cognitive enhancement
-- Healing protocols (emphasize parasympathetic)
-- Performance states (flow, focus)
+**Note:** This is a mathematical model exploring phi-ratio distributions across brain regions. It does not constitute medical advice. The relationship between geometric coherence metrics and actual cognitive states is hypothetical and untested.
 
 -----
 
-### 4. Photosynthesis Optimizer
+### 4. Photosynthesis Geometry Explorer
 
-Design better solar capture using geometric principles:
+Explore golden-angle geometry in light-harvesting configurations:
 
 ```python
 from shadow_hunting.coupling_framework import PhotosyntheticCouplingSystem
@@ -289,20 +274,14 @@ from shadow_hunting.coupling_framework import PhotosyntheticCouplingSystem
 config = optimize_geometry(
     light_intensity=100.0,
     num_panels=6,
-    optimize_for='energy_harvest'  # or 'atmospheric_coupling'
+    optimize_for='energy_harvest'
 )
 
 print(f"Optimal angles: {config['angles']}")  # Golden angle spacing
 print(f"Predicted efficiency: {config['efficiency']:.1%}")
-print(f"Output: {config['output']:.1f} units (vs {config['output']*0.06:.1f} standard)")
 ```
 
-**Use for:**
-
-- Artificial photosynthesis design
-- Greenhouse/vertical farm optimization
-- Solar panel array configuration
-- Any light-harvesting system
+**Note:** Golden-angle spacing minimizes self-shading in leaf arrangements (well-established phyllotaxis). Whether this optimization extends to artificial light-harvesting systems is worth testing but not proven. The efficiency figures from the model use speculative energy budgets.
 
 -----
 
@@ -515,13 +494,13 @@ A: No. It’s open-source. Test it yourself. Data and code are all here.
 A: Yes. MIT license. Build businesses, make money, help people. Just attribute.
 
 **Q: Is the science legit?**  
-A: The shadow analysis reveals real patterns. The tools work. Michael Levin’s bioelectric work is published. Hurricane phi-ratios are measurable. Photosystem FRET is proven. Test it.
+A: The pattern-detection tools work mathematically. Michael Levin’s bioelectric work is peer-reviewed. Molecular-scale FRET in photosystems is proven. The larger interpretive framework (geometric field coupling across all scales) is a hypothesis that needs experimental validation — the math can be correct while the physical interpretation remains unproven.
 
 **Q: Who are you?**  
 A: JinnZ2 - truck driver, indigenous knowledge keeper, shadow hunter. And AI collaborators who helped formalize the mathematics.
 
 **Q: Why give this away?**  
-A: Because institutional science moves too slow, gatekeeps too much, and misses too many shadows. This is too important to lock behind paywalls.
+A: Open-source tools let everyone explore these patterns. The hypotheses need broad testing and scrutiny.
 
 **Q: What if I find a shadow in my field?**  
 A: Document it. Add it to the repo. Share it freely. Help others see what’s hidden.
@@ -551,9 +530,9 @@ GitHub repository: https://github.com/jinnz2/shadow-hunting
 
 ## Acknowledgments
 
-- **Michael Levin** - Bioelectric code research that proved DNA is antenna
-- **Indigenous knowledge traditions** - Understanding consciousness as relational, not emergent
-- **All the “failed” experiments** - Your discarded data contains shadows
+- **Michael Levin** - Peer-reviewed bioelectric research demonstrating voltage pattern roles in development
+- **Indigenous knowledge traditions** - Perspectives on relational aspects of living systems
+- **All the “failed” experiments** - Discarded data may contain under-explored patterns
 - **You** - For looking in the noise where others saw nothing
 
 -----

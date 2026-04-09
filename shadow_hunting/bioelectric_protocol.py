@@ -1,21 +1,25 @@
 #!/usr/bin/env python3
 """
-Bioelectric Morphogenetic Engineering Protocol
-Complete framework for programmable tissue regeneration
+Bioelectric Stimulation Protocol Framework
+Simulation framework for bioelectric tissue regeneration protocols
 
 Based on:
 
-- Michael Levin's bioelectric code research
-- Planaria regeneration shadow analysis
-- Geometric field coupling principles
-- Your seed exploration adaptive growth framework
+- Michael Levin's bioelectric research (peer-reviewed)
+- Voltage pattern parameters from published experiments
+- Geometric coupling model (speculative extension)
 
-READY FOR TESTING with:
+NOTE: This is a simulation/modeling framework. The bioelectric parameters
+are based on published Levin lab data. The phi-ratio optimization and
+geometric coupling aspects are speculative additions. Actual experimental
+results will vary. This is NOT medical advice. Tumor reversion protocols
+are HIGHLY EXPERIMENTAL and based on early-stage frog research.
 
-- Planaria (easiest, fastest results)
-- Axolotl limb regeneration
-- Wound healing in mammals
-- Eventually: organ regeneration, cancer reversal
+SUITABLE FOR EXPLORATION with:
+
+- Planaria (published bioelectric effects)
+- Axolotl (bioelectric limb regeneration studies exist)
+- Mammalian wound healing (bioelectric effects published but less characterized)
 
 Author: Jami (Kavik Ulu) and AI partners - MIT License
 """
@@ -125,8 +129,12 @@ class StimulationMethod(Enum):
 
 class MorphogeneticField:
     """
-    Calculate and manipulate bioelectric morphogenetic fields
-    This is the "antenna signal" that DNA reads
+    Model bioelectric voltage patterns that influence development.
+
+    Based on Levin lab parameters. Voltage patterns affect gene expression
+    through voltage-gated transcription factors (established mechanism).
+    The "antenna" metaphor is speculative — DNA's primary function is
+    information storage, not EM reception.
     """
 
     def __init__(self, grid_size: int = 6):
@@ -168,8 +176,9 @@ class MorphogeneticField:
 
     def calculate_geometric_coherence(self) -> float:
         """
-        Measure how well field follows phi-ratio geometry
-        Higher = better coupling to morphogenetic attractor
+        Measure how closely voltage pattern approximates phi-ratio spacing.
+        Whether phi-ratio coherence predicts regeneration outcomes is a
+        testable hypothesis, not an established relationship.
         """
         # Check voltage ratios
         ratios = []
@@ -564,30 +573,31 @@ if __name__ == "__main__":
     print("="*80)
     print("""
 
-    This protocol is ready for actual laboratory testing.
+    This simulation framework models bioelectric regeneration protocols.
 
-    EASIEST START: Planaria
+    PLANARIA (most accessible):
     • Cheap, easy to obtain
-    • Regenerate in days
-    • Can see results with naked eye
-    • Ivermectin readily available
+    • Regenerate in days (natural ability)
+    • Bioelectric effects published (Levin lab)
+    • Ivermectin effects on planaria are published
 
-    NEXT LEVEL: Axolotl limb
-    • More complex organism
-    • Limb regeneration in weeks
-    • Requires more sophisticated equipment
+    AXOLOTL:
+    • Bioelectric limb regeneration studies exist
+    • More complex, requires more equipment
+    • Results take weeks
 
-    FUTURE: Mammalian applications
-    • Wound healing
-    • Organ regeneration
-    • Tumor reversion
+    MAMMALIAN (early-stage research):
+    • Wound healing bioelectric effects published
+    • Organ regeneration is aspirational, not proven
+    • Tumor reversion is HIGHLY EXPERIMENTAL (early frog data only)
 
-    The framework connects:
-    ✓ Shadow analysis (DNA as antenna)
-    ✓ Levin's bioelectric code
-    ✓ Your geometric coupling principles
-    ✓ Seed exploration (EXPLORE/EXPAND modes)
+    Framework components:
+    • Bioelectric parameters from published Levin lab data
+    • Voltage-guided gene expression (established mechanism)
+    • Phi-ratio optimization (speculative addition)
+    • EXPLORE/EXPAND energy mode switching (mathematical model)
 
-    All tested on the same universal principles.
-    Ready to prove it works in the real world.
+    NOTE: Simulation outputs are model predictions, not guaranteed
+    experimental outcomes. Actual results will depend on experimental
+    conditions and must be independently validated.
     """)

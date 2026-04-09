@@ -1,22 +1,26 @@
 #!/usr/bin/env python3
 """
 Universal Geometric Coupling Framework
-Applying seed exploration principles to real-world energy coupling systems
+Exploring geometric patterns across energy coupling systems
 
-CORE INSIGHT FROM SHADOW ANALYSIS:
-All systems operate on the same principle:
+CORE HYPOTHESIS:
+Multiple systems may share geometric organizational principles:
 
-- Energy budget determines exploration vs crystallization mode
-- Geometric field coupling optimizes information transfer
-- Phi-ratios emerge from field dynamics, not counting
-- "Waste" energy maintains field coherence
+- Energy budget influences exploration vs maintenance mode
+- Phi-ratio geometry appears in many natural systems
+- Some energy categorized as "waste" may serve functional roles
+- These are hypotheses requiring experimental validation
 
-APPLICATIONS:
+APPLICATIONS (EXPERIMENTAL):
 
-1. Energy harvesting optimization (photosynthesis, hurricanes)
-1. Consciousness field coupling (brain, meditation, healing)
-1. Morphogenetic engineering (planaria, tissue regeneration)
-1. Climate prediction (atmospheric coupling)
+1. Geometric optimization in light-harvesting configurations
+2. Brain coherence metrics across different states
+3. Bioelectric protocols based on Levin lab research
+4. Geometric structure metrics for atmospheric systems
+
+NOTE: The efficiency figures and energy allocations in this framework are
+speculative. Standard calorimetry and thermodynamics are well-validated.
+Claims about "field coupling" as a universal mechanism are hypothetical.
 
 Author: Jami (Kavik Ulu) and AI partners - MIT License
 """
@@ -35,13 +39,13 @@ PHI = (np.sqrt(5) - 1) / 2
 
 class GeometricCouplingSystem:
     """
-    Base class for any system that couples energy geometrically
+    Base class for modeling systems with geometric organization.
 
-    All systems share:
+    Explores whether phi-ratio metrics correlate with system behavior:
     - Energy budget E
-    - Geometric field pattern
-    - Coupling efficiency based on phi-ratios
-    - Mode switching (explore/expand) based on energy
+    - Geometric pattern analysis
+    - Phi-ratio deviation metric
+    - Mode switching (explore/expand) based on energy threshold
     """
 
     def __init__(self, name: str, energy_budget: float):
@@ -172,9 +176,11 @@ class PhotosyntheticCouplingSystem(GeometricCouplingSystem):
 
 class ConsciousnessCouplingSystem(GeometricCouplingSystem):
     """
-    Apply geometric coupling to brain-consciousness interaction
+    Model brain region coupling using geometric metrics (speculative).
 
-    USE CASE: Meditation optimization, healing protocols, cognitive enhancement
+    NOTE: This is a mathematical exploration, not a validated neuroscience
+    model. "Consciousness coupling" is a hypothesis. The relationship between
+    phi-ratio distributions and actual brain states is untested.
     """
 
     def __init__(self, metabolic_energy: float, num_regions: int = 6):
@@ -185,9 +191,9 @@ class ConsciousnessCouplingSystem(GeometricCouplingSystem):
 
     def get_branching_threshold(self) -> float:
         """
-        Glucose threshold for neuroplasticity vs maintenance
-        From shadow analysis: ~25% of energy for measured spikes
-        ~75% for field maintenance
+        Energy threshold for mode switching in the brain model.
+        Standard neuroscience: ~50-60% to ion pumps, ~20% to spikes/synapses.
+        The "field maintenance" allocation is a speculative hypothesis.
         """
         return 0.75 * self.E  # Field maintenance cost
 
@@ -263,9 +269,11 @@ class ConsciousnessCouplingSystem(GeometricCouplingSystem):
 
 class MorphogeneticCouplingSystem(GeometricCouplingSystem):
     """
-    Apply geometric coupling to tissue regeneration/morphogenesis
+    Model bioelectric guidance of tissue regeneration.
 
-    USE CASE: Wound healing, regenerative medicine, bioelectric therapy
+    Based on Levin lab parameters. Voltage patterns influence development
+    through voltage-gated transcription factors (established mechanism).
+    The phi-ratio optimization aspect is a speculative addition.
     """
 
     def __init__(self, metabolic_energy: float, tissue_regions: int = 6):
@@ -447,20 +455,24 @@ def compare_systems():
     print("="*80)
     print(f"""
 
-    1. ALL SYSTEMS USE SAME COUPLING MECHANISM
-   Average efficiency across systems: {np.mean(efficiencies):.3f}
-    1. ENERGY DETERMINES MODE
-   High energy → EXPLORE (innovation, growth, intensification)
-   Low energy → EXPAND (maintenance, preservation)
-    1. PHI-RATIOS OPTIMIZE COUPLING
-   Systems naturally evolve toward golden ratio configurations
-    1. "WASTE" ENERGY IS FIELD COUPLING
-   What we measure as "loss" is geometric information transfer
-    1. APPLICATIONS:
-   • Photosynthesis: {photo.optimize_leaf_geometry()['predicted_output']:.1f} units (vs 6 with standard model)
-   • Brain: {brain.consciousness_level:.2f} consciousness level
-   • Morphogenesis: {morph._measure_progress()*100:.1f}% regeneration progress
-   • Hurricane: {storm.wind_speed:.0f} kt potential intensity
+    OBSERVATIONS FROM THE MODEL:
+
+    1. All four models use the same phi-ratio metric
+       Average metric across systems: {np.mean(efficiencies):.3f}
+    2. Energy threshold determines mode in all models
+       High energy → EXPLORE (growth, innovation)
+       Low energy → EXPAND (maintenance, preservation)
+    3. Phi-ratios appear in many natural systems
+       Whether this reflects a shared mechanism is a hypothesis
+    4. Model outputs (speculative — not validated measurements):
+       • Photosynthesis: {photo.optimize_leaf_geometry()['predicted_output']:.1f} units (uses speculative 82% budget)
+       • Brain coherence metric: {brain.consciousness_level:.2f}
+       • Morphogenesis progress: {morph._measure_progress()*100:.1f}%
+       • Hurricane intensity: {storm.wind_speed:.0f} kt
+
+    NOTE: These models demonstrate the mathematical framework.
+    The efficiency figures and energy allocations are hypothetical
+    and require experimental validation.
    """)
 
     return systems
@@ -551,28 +563,25 @@ if __name__ == "__main__":
     print("="*80)
     print("""
 
-    The framework is ready for:
+    The framework provides tools for exploring:
 
-    1. ENERGY HARVESTING OPTIMIZATION
-    - Artificial photosynthesis with 82% efficiency (vs 6%)
-    - Hurricane energy capture during intensification
-    1. CONSCIOUSNESS ENGINEERING
-    - Meditation protocols optimized for intention
-    - Cognitive enhancement through field coherence
-    1. REGENERATIVE MEDICINE
-    - Bioelectric healing protocols
-    - Tissue engineering with voltage-guided morphogenesis
-    1. CLIMATE PREDICTION
-    - Hurricane intensification forecasting
-    - Atmospheric coupling pattern recognition
+    1. LIGHT-HARVESTING GEOMETRY
+       - Golden-angle spacing is proven optimal for phyllotaxis
+       - Whether this extends to artificial systems needs testing
+       - The "82% efficiency" figure is a speculative upper bound
+    2. BRAIN COHERENCE METRICS
+       - Mathematical model of phi-ratio distributions across regions
+       - Relationship to actual brain states is untested
+       - Not a substitute for neuroscience research
+    3. BIOELECTRIC PROTOCOLS
+       - Based on Levin lab parameters (peer-reviewed)
+       - Voltage-guided regeneration is demonstrated in planaria/frogs
+       - Phi-ratio optimization is a speculative addition
+    4. ATMOSPHERIC PATTERN ANALYSIS
+       - Geometric coherence as a structural metric
+       - Needs validation against operational forecast models
 
-    All applications use same principles discovered in shadow analysis:
-
-    - Geometric coupling optimizes energy transfer
-    - Phi-ratios emerge from field dynamics
-    - Energy budget determines explore/expand mode
-    - "Waste" is actually field maintenance
-
-    The shadows revealed the mechanism.
-    Now we can engineer with it.
+    These are hypotheses worth testing, not established results.
+    The mathematical tools detect patterns regardless of cause.
+    Experimental validation is needed for all claimed applications.
     """)

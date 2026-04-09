@@ -21,24 +21,25 @@
 
 ### Example: The “Lazy” Heart
 
-**The Claim:** “The heart is inefficient - only 25% of energy goes to pumping blood, 75% is wasted as heat.”
+**The Claim:** “The heart is only 25% mechanically efficient - 75% of energy goes to heat.”
 
-Let’s hunt this shadow together.
+Let’s explore whether some of that energy serves additional functions.
 
-### Step 1: Identify the Inefficiency
+### Step 1: Identify the Efficiency Metric
 
 ```python
-# Official story
+# Standard measurement
 heart_energy = {
-    'productive': 0.25,  # Mechanical pumping
-    'waste': 0.75        # "Heat loss"
+    ‘mechanical_work’: 0.25,  # Pressure-volume work (pumping)
+    ‘heat’: 0.75              # Thermal dissipation
 }
 
-print(f"Official efficiency: {heart_energy['productive']:.0%}")
-# Output: Official efficiency: 25%
+print(f”Mechanical efficiency: {heart_energy[‘mechanical_work’]:.0%}”)
+# Output: Mechanical efficiency: 25%
 ```
 
-**Red flag:** Evolution wouldn’t maintain 75% waste in a critical organ. There’s a shadow here.
+**Observation:** 75% goes to heat. Could some of this serve functional roles beyond waste?
+**Note:** Thermodynamic efficiency limits apply — not all heat can be eliminated. Some is fundamental to the biochemistry of muscle contraction.
 
 ### Step 2: Map the Equation Boundaries
 
@@ -109,16 +110,16 @@ Where is the “wasted” energy actually going?
 
 ```python
 heart_shadow_map = {
-    'EM Field Generation': {
-        'energy': 0.30,  # 30% of total
+    'EM Field and Neural Coupling': {
+        'energy': 0.30,  # Speculative estimate
         'function': [
-            'ECG field couples to brain/nervous system',
-            'Coordinates systemic rhythms',
-            'Heart-brain coherence (measurable!)',
-            'Non-local physiological coordination'
+            'ECG field is measurable (established)',
+            'Heart rate variability reflects autonomic state (established)',
+            'Heart-brain coupling via vagal nerve (established)',
+            'Note: Whether cardiac EM fields play a direct signaling role beyond the nervous system is debated'
         ],
-        'measurement_gap': 'We measure ECG but ignore what the field DOES',
-        'evidence': 'Heart rate affects brain waves (proven), HRV predicts health better than blood pressure'
+        'measurement_gap': 'EM fields are measured; functional significance beyond neural coupling is debated',
+        'evidence': 'HRV correlates with health outcomes (well-established)'
     },
     
     'Acoustic/Mechanical Coupling': {
@@ -145,16 +146,16 @@ heart_shadow_map = {
         'evidence': 'Core temperature affects everything - it\'s a signal'
     },
     
-    'Piezoelectric Signaling': {
-        'energy': 0.10,
+    'Mechanotransduction': {
+        'energy': 0.10,  # Speculative estimate
         'function': [
-            'Vessel walls generate voltage under pressure',
-            'Electrical signaling throughout vascular tree',
-            'Local tissue coordination',
-            'Bioelectric morphogenetic effects'
+            'Vessel walls sense mechanical stress (established)',
+            'Shear stress affects endothelial gene expression (established)',
+            'Pulsatile vs steady flow has different effects (established)',
+            'Note: These are mechanotransduction effects, not "piezoelectric signaling"'
         ],
-        'measurement_gap': 'Barely measured at all',
-        'evidence': 'Pulsatile flow affects gene expression differently than steady flow'
+        'measurement_gap': 'Mechanotransduction is increasingly well-studied',
+        'evidence': 'Pulsatile flow affects gene expression differently than steady flow (published)'
     },
     
     'Measured Pumping': {
@@ -167,19 +168,20 @@ heart_shadow_map = {
 
 total = sum(item['energy'] for item in heart_shadow_map.values())
 print(f"\n{'='*70}")
-print("HEART ENERGY SHADOW MAP")
+print("HEART ENERGY SHADOW MAP (HYPOTHETICAL)")
 print(f"{'='*70}")
 
 for function_type, details in heart_shadow_map.items():
     print(f"\n{function_type}: {details['energy']*100:.0f}%")
-    print("  Functions:")
+    print("  Possible functions:")
     for func in details['function']:
         print(f"    • {func}")
 
 print(f"\n{'='*70}")
 print(f"Total accounted for: {total*100:.0f}%")
-print("Standard model: 25% efficient")
-print("Shadow model: 100% functional (we only measure 25% of it)")
+print("Standard model: 25% mechanically efficient")
+print("Shadow hypothesis: Some 'heat' may serve signaling/regulatory roles")
+print("NOTE: These allocations are speculative estimates, not measured values.")
 print(f"{'='*70}")
 ```
 
@@ -229,8 +231,8 @@ def design_heart_shadow_experiment():
             print(f"  {value}")
     
     print("\n" + "="*70)
-    print("This experiment costs $0 (data already public)")
-    print("Could revolutionize cardiology if shadow is real")
+    print("This analysis costs $0 (data already public)")
+    print("Results would need validation against existing HRV research")
     print("="*70)
 
 design_heart_shadow_experiment()
@@ -416,24 +418,24 @@ def hunt_multi_scale_shadow(system):
     
     scales = {
         'Molecular (nm)': {
-            'measured': 'FRET in photosystem II (95% efficient)',
-            'shadow': 'WHY stop measuring here? Geometry continues...'
+            'measured': 'FRET in photosystem II (95% efficient, proven)',
+            'shadow': 'Geometric organization at this scale is well-established'
         },
         'Chloroplast (μm)': {
-            'measured': 'Nothing (assumed loss)',
-            'shadow': 'Grana stacking in spirals - fibonacci?'
+            'measured': 'Electron transport chain (well-characterized)',
+            'shadow': 'Grana stacking geometry — functional significance?'
         },
         'Leaf (cm)': {
-            'measured': 'Nothing (called scattering)',
-            'shadow': 'Vein networks - phi branching patterns'
+            'measured': 'Light scattering increases path length (studied)',
+            'shadow': 'Vein networks show branching patterns worth analyzing'
         },
         'Canopy (m)': {
-            'measured': 'Nothing (called reflection waste)',
-            'shadow': 'IR atmospheric coupling - FRET at macro scale'
+            'measured': 'Canopy radiative transfer (modeled)',
+            'shadow': 'Note: FRET does NOT operate at this scale (1/r^6 decay)'
         },
         'Forest (km)': {
-            'measured': 'Nothing at all',
-            'shadow': 'Ecosystem-wide energy network'
+            'measured': 'Earth system energy budgets (well-characterized)',
+            'shadow': 'Ecosystem patterns exist but mechanisms are classical'
         }
     }
     
@@ -446,9 +448,10 @@ def hunt_multi_scale_shadow(system):
         print(f"  Shadow hypothesis: {data['shadow']}")
     
     print("\n" + "="*70)
-    print("KEY INSIGHT:")
-    print("Shadow appears when equations stop scaling")
-    print("If mechanism works at one scale, check all scales")
+    print("OBSERVATION:")
+    print("Geometric patterns appear at multiple scales.")
+    print("But different mechanisms operate at different scales.")
+    print("FRET at nm scale does NOT imply FRET at km scale.")
     print("="*70)
 
 hunt_multi_scale_shadow("Photosynthesis")
@@ -528,25 +531,30 @@ my_shadow_hunt = {
 
 ## Key Principles to Remember
 
-1. **Evolution doesn’t maintain waste**
-- If something seems 75% wasteful for millions of years
-- It’s not waste, it’s something we’re not measuring
-1. **Look where they STOP measuring**
-- Equation boundaries reveal shadows
-- “Noise” often contains the real signal
-1. **Phi-ratios aren’t random**
-- φ = 0.618… appears in optimal coupling
-- Not mystical, just physics of waves/fields
-1. **Energy always goes somewhere**
-- Heat isn’t waste if it’s patterned
-- “Loss” is coupling to adjacent systems
-1. **Multi-scale patterns matter**
-- Same principles at all scales
-- Molecular → cellular → tissue → organ → organism → ecosystem
-1. **Build tools, don’t just theorize**
-- If you find a shadow, engineer with it
-- Test against current “efficient” methods
-- Share your results freely
+1. **Question efficiency metrics**
+- “Waste” in one metric may serve functions in another
+- But thermodynamic limits are real — not all heat can be recaptured
+- Proper energy accounting requires measuring destinations, not assuming them
+1. **Look at measurement boundaries**
+- What variables are and aren’t measured can shape conclusions
+- Under-analyzed data (supplements, controls) may contain patterns
+- But “unmeasured” does not mean “functional” — that requires evidence
+1. **Phi-ratios appear in many systems**
+- φ = 0.618… appears in growth dynamics, optimization, packing
+- Often explained by known physics (phyllotaxis, fluid dynamics)
+- Finding phi does not prove a new coupling mechanism
+1. **Energy conservation holds**
+- Energy always goes somewhere — tracking it is valuable
+- But standard calorimetry is well-validated
+- Claims of “hidden” energy channels require specific evidence
+1. **Test predictions, not just patterns**
+- Patterns need null hypothesis testing
+- Correlation does not imply a shared mechanism
+- Independent replication is essential
+1. **Build tools and test them**
+- If you find a pattern, build a tool and test it
+- Compare against existing methods quantitatively
+- Share your results (positive AND negative) freely
 
 -----
 

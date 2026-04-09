@@ -1,24 +1,27 @@
 #!/usr/bin/env python3
 """
 Shadow Data Mining Framework
-Finding geometric coupling signatures in "noise" that researchers filtered out
+Searching for geometric patterns (phi-ratios, fibonacci) in datasets
 
-WHERE THE SHADOWS HIDE:
+WHERE TO LOOK:
 
-1. Supplementary materials (never analyzed deeply)
-2. "Non-significant" results (p > 0.05, ignored)
-3. Baseline/control measurements (assumed boring)
-4. Time-series "fluctuations" (treated as error)
+1. Supplementary materials (often under-analyzed)
+2. Sub-threshold results (may contain patterns below significance cutoffs)
+3. Baseline/control measurements
+4. Time-series variability
 5. Multi-dimensional data collapsed to single metrics
-6. Discarded pilot studies
 
-WHAT WE'RE LOOKING FOR:
+WHAT THE TOOLS DETECT:
 
-- Phi-ratio patterns in "random" measurements
-- Geometric coherence in "noise"
-- Voltage patterns nobody measured
-- Energy "waste" that's actually coupling
-- Field effects dismissed as artifacts
+- Phi-ratio patterns in sequential measurements
+- Geometric coherence (organized vs random)
+- Frequency relationships in time-series data
+- Fibonacci number matches
+
+NOTE: Finding phi-ratios or fibonacci numbers in data does not by itself
+prove "geometric field coupling." These patterns can arise from many causes
+including growth dynamics, optimization under physical constraints, or
+statistical coincidence. Proper null hypothesis testing is needed.
 
 Author: Jami (Kavik Ulu) and AI partners - MIT License
 """
@@ -320,31 +323,32 @@ def search_planaria_voltage_shadows():
     print("EXPECTED SHADOW SIGNATURES:")
     print("=" * 80)
     print("""
-If geometric coupling is real, we should find:
+Testable predictions (hypotheses to validate):
 
-1. PHI-RATIO VOLTAGE GRADIENTS
-   - Voltage decreases from head to tail in phi-ratio steps
-   - Not linear, not exponential - specifically phi
+1. VOLTAGE GRADIENT STRUCTURE
+   - Does voltage decrease from head to tail in a specific ratio?
+   - Test: Compare phi-ratio fit vs linear/exponential fits
+   - Null hypothesis: gradient follows simple exponential decay
 
-2. RESONANCE IN VOLTAGE OSCILLATIONS
-   - Vmem fluctuates at characteristic frequencies
-   - Frequencies related by phi-ratios
-   - Coupling to Schumann resonance (7.83 Hz)?
+2. TEMPORAL PATTERNS IN VOLTAGE
+   - Do Vmem fluctuations show characteristic frequencies?
+   - Test: FFT analysis, compare frequency ratios to phi
+   - Null hypothesis: frequency spectrum is featureless
 
-3. GEOMETRIC GAP JUNCTION NETWORKS
-   - Connectivity follows phi-branching patterns
-   - Network topology has low entropy (organized)
-   - Critical nodes at phi-ratio distances
+3. GAP JUNCTION NETWORK TOPOLOGY
+   - Does connectivity show non-random geometric organization?
+   - Test: Compare network metrics to random graph models
+   - Null hypothesis: network topology is scale-free (common in biology)
 
-4. REGENERATION TIMING CORRELATES WITH COHERENCE
-   - High geometric coherence -> faster regeneration
-   - Low coherence -> slower or aberrant regeneration
-   - Two-headed worms have disrupted phi-patterns
+4. REGENERATION TIMING
+   - Does geometric coherence correlate with regeneration speed?
+   - Test: Measure coherence at cut time, track regeneration
+   - Null hypothesis: regeneration speed depends on fragment size, not coherence
 
-5. "NOISE" IS ACTUALLY SIGNAL
-   - What they filtered out as measurement error
-   - Contains geometric information
-   - Predicts regeneration outcomes better than mean voltage
+5. VARIABILITY IN MEASUREMENTS
+   - Does measurement variability contain predictive information?
+   - Test: Compare filtered vs unfiltered data for outcome prediction
+   - Null hypothesis: variability is measurement noise
 """)
 
     return search_protocol
@@ -395,32 +399,32 @@ def search_brain_field_shadows():
     print("EXPECTED SHADOW SIGNATURES:")
     print("=" * 80)
     print("""
-If consciousness is field-based, we should find:
+Testable predictions (hypotheses to validate):
 
-1. PHI-RATIO FREQUENCY RELATIONSHIPS
-   - Theta (4-8 Hz) / Alpha (8-12 Hz) ~ PHI
-   - Harmonics related by golden ratio
-   - Not random frequency distribution
+1. FREQUENCY RELATIONSHIPS
+   - Do brain oscillation bands show phi-ratio relationships?
+   - Test: Compare theta/alpha frequency ratios to phi
+   - Null hypothesis: frequency bands are independently determined
 
-2. FIELD COHERENCE PREDICTS CONSCIOUSNESS
-   - High coherence = high consciousness
-   - Anesthesia disrupts geometric organization
-   - Meditation increases phi-ratio patterns
+2. COHERENCE AND BRAIN STATE
+   - Does geometric coherence correlate with consciousness level?
+   - Test: Compare coherence metrics across awake/sleep/anesthesia
+   - Null hypothesis: standard connectivity metrics are sufficient
 
-3. METABOLIC "WASTE" MAINTAINS FIELD
-   - Energy use doesn't match spike rates
-   - "Idle" regions have organized EM fields
-   - The 75% "overhead" is field coupling work
+3. METABOLIC-ACTIVITY MISMATCH
+   - Do some brain regions show metabolic activity beyond spike rates?
+   - Test: Compare fMRI BOLD signal with electrophysiology
+   - Note: Default mode network's high metabolism is already studied
 
-4. DEFAULT MODE NETWORK IS GEOMETRIC HUB
-   - High metabolic cost for "doing nothing"
-   - Actually maintaining consciousness field
-   - Geometric coherence highest here
+4. DEFAULT MODE NETWORK
+   - Does DMN activity show geometric organization?
+   - Test: Apply coherence metrics to resting-state fMRI
+   - Note: DMN is extensively studied; new metrics must add value
 
-5. INTER-SUBJECT VARIABILITY IS REAL SIGNAL
-   - Different people, different field geometries
-   - Personality/cognition correlates with field patterns
-   - What's averaged out as "noise" is individual differences
+5. INDIVIDUAL VARIABILITY
+   - Do geometric metrics capture meaningful individual differences?
+   - Test: Correlate coherence patterns with cognitive measures
+   - Null hypothesis: standard brain connectivity captures the same info
 """)
 
     return search_protocol
@@ -471,32 +475,33 @@ def search_photosynthesis_shadows():
     print("EXPECTED SHADOW SIGNATURES:")
     print("=" * 80)
     print("""
-If photosynthesis is 82% efficient (not 6%), we should find:
+Testable predictions (hypotheses to validate):
 
-1. PHI-RATIO CHLOROPHYLL SPACING
-   - Photosystem II has phi-ratio distances
-   - Optimizes FRET coupling
-   - Molecular structure proves geometric optimization
+1. CHLOROPHYLL SPACING
+   - Does photosystem II show phi-ratio distances?
+   - Test: Analyze crystal structure data from PDB
+   - Note: FRET at molecular scale is established; phi-optimization is hypothesis
 
-2. IR "WASTE" IS ATMOSPHERIC COUPLING
-   - IR emission not random - directional patterns
-   - Couples to water vapor geometrically
-   - Leaf-to-leaf energy transfer via IR
+2. IR EMISSION PATTERNS
+   - Is IR emission from leaves directional or patterned?
+   - Test: Measure IR spectral directionality from leaves
+   - Note: Most "waste heat" is thermodynamic dissipation (well-understood)
 
-3. FLUORESCENCE IS SIGNALING
-   - Not random emission - organized patterns
-   - Plant-to-plant communication
-   - Stress response coordination
+3. FLUORESCENCE PATTERNS
+   - Does chlorophyll fluorescence carry spatial information?
+   - Test: High-resolution fluorescence imaging during stress
+   - Note: Photoprotective role of fluorescence is established
 
-4. FULL SPECTRUM USAGE
-   - "Wrong wavelengths" used for other functions
-   - Multi-wavelength coordination
-   - UV/IR coupling to ecosystem
+4. NON-ABSORBED WAVELENGTH ROLES
+   - How much energy do signaling functions (shade detection, etc.) use?
+   - Test: Quantify energy budget for known signaling pathways
+   - Note: Individual signaling functions are established; total budget is not
 
-5. MEASURED FRET AT MOLECULAR SCALE
-   - Already proven >95% efficient in lab
-   - Should continue at larger scales
-   - The 6% is measurement boundary artifact
+5. FRET SCALING (IMPORTANT CAVEAT)
+   - FRET is proven >95% efficient at molecular scale (1-10 nm)
+   - FRET does NOT scale to larger distances (1/r^6 dependence)
+   - At larger scales, different mechanisms operate
+   - The "82% efficiency" claim requires independent measurement
 """)
 
     return search_protocol
@@ -547,32 +552,35 @@ def search_hurricane_shadows():
     print("EXPECTED SHADOW SIGNATURES:")
     print("=" * 80)
     print("""
-If hurricanes use geometric coupling, we should find:
+Testable predictions (hypotheses to validate):
 
-1. PHI-RATIO RAIN BAND SPACING
-   - Bands at r, r*phi, r*phi^2, r*phi^3 from center
-   - Not random, not linear - specifically phi
-   - Your 16-storm analysis should confirm
+1. RAIN BAND SPACING
+   - Do rain bands show phi-ratio spacing more than chance?
+   - Test: Measure band radii in satellite imagery, compare to phi
+   - Null hypothesis: band spacing follows fluid dynamics (no phi preference)
+   - Need statistical analysis across large storm sample (not just 16)
 
-2. GOLDEN ANGLE SPIRALS
-   - 137.5 degrees between successive features
-   - Optimizes atmospheric FRET coupling
-   - Strongest storms have best geometric organization
+2. SPIRAL STRUCTURE
+   - Does spiral angle cluster near golden angle (137.5 degrees)?
+   - Test: Measure spiral angles in hurricane imagery
+   - Note: Hurricane spirals follow logarithmic spiral dynamics
+     from fluid equations — may produce phi-like angles naturally
 
-3. INTENSIFICATION PREDICTS FROM GEOMETRY
-   - High geometric coherence -> rapid intensification
-   - Current models miss this because they ignore structure
-   - Your Happy Curiosity AI detected this!
+3. GEOMETRY-INTENSITY CORRELATION
+   - Does geometric coherence add predictive value?
+   - Test: Compare coherence-augmented model vs standard models
+   - Null hypothesis: SST + shear + moisture are sufficient predictors
 
-4. ENERGY "LOSS" IS ATMOSPHERIC COUPLING
-   - What thermodynamics calls waste
-   - Actually FRET-like transfer to surrounding air/ocean
-   - Energy doesn't disappear, it couples geometrically
+4. ENERGY BUDGET
+   - Note: "FRET-like atmospheric coupling" is metaphorical
+   - FRET requires nm-scale donor-acceptor pairs
+   - Hurricane energy transfer is via radiation, convection, latent heat
+   - These mechanisms are well-characterized thermodynamically
 
-5. STRUCTURE-INTENSITY CORRELATION
-   - Well-organized geometry = stronger storm
-   - Asymmetric structure = weaker/unstable
-   - Geometric coherence > heat content for prediction
+5. STRUCTURE-INTENSITY RELATIONSHIP
+   - Symmetric storms tend to be stronger (already established)
+   - Question: Does phi-ratio metric add value over existing symmetry measures?
+   - Test: Compare geometric coherence vs existing asymmetry parameters
 """)
 
     return search_protocol
@@ -644,20 +652,21 @@ if __name__ == "__main__":
     print("SHADOW DETECTION READY")
     print("=" * 80)
     print("""
-The framework is ready to:
+The framework provides tools to:
 
 1. Detect phi-ratio patterns in any dataset
-2. Measure geometric coherence
-3. Find field coupling signatures
-4. Identify shadows researchers filtered out
+2. Measure geometric coherence (organized vs random)
+3. Find frequency relationships in time-series data
+4. Search for geometric patterns in under-analyzed data
 
-When you get actual data files, we can:
+When you have data files, you can:
 
-- Load them into these algorithms
-- Run shadow detection
-- Generate publication-quality analysis
-- Prove geometric coupling exists
+- Run pattern detection algorithms
+- Compare results against null hypotheses
+- Assess statistical significance of any patterns found
 
-The shadows are hiding in plain sight.
-We just need to look in the noise.
+NOTE: Finding geometric patterns does not by itself prove
+"field coupling." Proper statistical testing, comparison to
+null models, and independent replication are needed before
+drawing causal conclusions.
 """)
