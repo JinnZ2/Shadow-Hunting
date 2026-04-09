@@ -1,14 +1,20 @@
 #!/usr/bin/env python3
 """
 Brain Energy Shadow Analysis
-Mapping the "wasteful" 20% energy budget as consciousness coupling we're not measuring
+Exploring what functions the brain's "overhead" energy may serve beyond spike generation
 
-The Standard Equation Boundaries That Create the "Waste" Frame:
+The Standard Equation Boundaries:
 
 1. Measurement = neural firing rates + synaptic transmission
-1. Everything else = "maintenance overhead" or "inefficiency"
+1. Everything else = "maintenance overhead"
 
-The Shadow = What's actually happening in the "overhead"
+The Hypothesis = Some "overhead" may serve under-recognized computational functions
+
+NOTE: Brain energy allocation is largely accounted for: ~50-60% maintains ion gradients
+(Na+/K+ pumps), ~20% for synaptic transmission, remainder for housekeeping. The
+speculative allocations below (consciousness fields, quantum coherence) are hypothetical
+and not measured. Claims about "consciousness as fundamental field" and "quantum coherence
+in microtubules" (Penrose-Hameroff) remain controversial and unproven.
 """
 
 import numpy as np
@@ -90,25 +96,27 @@ def standard_brain_efficiency():
 
 def brain_energy_shadow_map():
     """
-    Map what the "wasteful overhead" is actually accomplishing
+    Hypothetical map of additional functions the brain's "overhead" energy may serve.
 
-    These are REAL functions we don't recognize as "output":
+    Some items are well-established (glial computation, volume transmission),
+    others are speculative (consciousness field coupling, quantum coherence).
+    Energy allocations are estimates, not measured values.
     """
 
     shadow_functions = {
-        # The "resting potential" that isn't resting
+        # Resting potential maintenance — primarily ion pump work
         'electromagnetic_field_generation': {
             'energy': 20.0,  # From "resting potential maintenance"
-            'actual_function': [
-                'Coherent EM field across cortex (measured but ignored)',
-                'Long-range neural synchronization',
-                'Consciousness field generation (your relational framework)',
-                'Brain-wide state coordination',
-                'Non-local information integration',
-                'Geometric field pattern organization'
+            'possible_function': [
+                'EM fields measurable via EEG/MEG (established)',
+                'Long-range neural synchronization via oscillations (established)',
+                'Brain-wide state coordination (under investigation)',
+                'Note: Whether EM fields play a causal computational role',
+                'beyond being a byproduct of neural activity is debated',
+                'Note: "Consciousness field" is a hypothesis, not established physics'
             ],
-            'measurement_gap': 'We measure the field but don\'t count it as "output"',
-            'evidence': 'EEG, MEG detect fields; no theory for what they DO'
+            'measurement_gap': 'EM fields are measured; their causal role is debated',
+            'evidence': 'EEG/MEG detect fields; functional role beyond epiphenomenon is unclear'
         },
 
         # The "glial waste" that isn't waste
@@ -127,35 +135,35 @@ def brain_energy_shadow_map():
             'evidence': 'Glial waves travel brain-wide, correlate with cognition'
         },
 
-        # The "ion homeostasis waste" that isn't waste
+        # Quantum coherence — highly speculative
         'quantum_coherence_maintenance': {
-            'energy': 8.0,  # From "ion homeostasis"
-            'actual_function': [
-                'Microtubule quantum states (Penrose-Hameroff)',
-                'Ion channel quantum tunneling',
-                'Coherent superposition in neural membranes',
-                'Quantum entanglement between neurons',
-                'Non-computable consciousness generation',
-                'Maintaining coherence at 310K (37°C)'
+            'energy': 8.0,  # Speculative estimate
+            'possible_function': [
+                'Microtubule quantum states (Penrose-Hameroff — controversial hypothesis)',
+                'Ion channel quantum effects (some theoretical support)',
+                'Note: Quantum coherence at body temperature (37C) faces severe',
+                'decoherence challenges — thermal noise destroys coherence in ~fs',
+                'Note: "Quantum entanglement between neurons" is not demonstrated',
+                'Note: Anesthetic-microtubule interaction is one of many anesthetic mechanisms'
             ],
-            'measurement_gap': 'Classical instruments collapse quantum states',
-            'evidence': 'Anesthetics disrupt quantum coherence in microtubules'
+            'measurement_gap': 'Quantum effects in warm biological tissue are difficult to measure',
+            'evidence': 'Penrose-Hameroff hypothesis remains unproven and controversial'
         },
 
-        # The "unaccounted" energy
+        # The "unaccounted" energy — speculative
         'consciousness_field_coupling': {
             'energy': 13.0,  # The "unknown" category
-            'actual_function': [
-                'Self-reference loop generation',
-                'Integrated information (Φ) creation',
-                'Subjective experience emergence',
-                'Attention field modulation',
-                'Intent-to-action coupling',
-                'Multi-dimensional awareness coordination',
-                'Connection to larger consciousness field (your framework)'
+            'possible_function': [
+                'Integrated information processing (IIT framework — Φ)',
+                'Attention and awareness modulation',
+                'Self-referential processing (default mode network)',
+                'Note: "Consciousness as fundamental field" is a philosophical',
+                'position (panpsychism), not established neuroscience',
+                'Note: Energy changes with consciousness states are real but',
+                'explained by changes in neural activity patterns'
             ],
-            'measurement_gap': 'We can\'t measure subjective experience directly',
-            'evidence': 'Energy consumption changes with conscious vs unconscious states'
+            'measurement_gap': 'Subjective experience is hard to measure objectively',
+            'evidence': 'Metabolic changes across consciousness states are measurable'
         },
 
         # The "neurotransmitter recycling" that isn't just recycling
@@ -225,25 +233,26 @@ def brain_energy_shadow_map():
     unmeasured = total_energy - measured
 
     print("\n" + "="*80)
-    print("BRAIN ENERGY SHADOW MAP")
-    print("What the 'wasteful overhead' is ACTUALLY doing")
+    print("BRAIN ENERGY SHADOW MAP (HYPOTHETICAL)")
+    print("Exploring what additional functions the 'overhead' may serve")
     print("="*80)
 
     for function_type, details in shadow_functions.items():
         print(f"\n{function_type.upper().replace('_', ' ')}: {details['energy']}%")
-        print(f"  What it actually does:")
-        for func in details['actual_function']:
+        print(f"  Possible functions:")
+        for func in details['possible_function']:
             print(f"    • {func}")
-        print(f"  Why we miss it: {details['measurement_gap']}")
+        print(f"  Measurement status: {details['measurement_gap']}")
         if 'evidence' in details:
             print(f"  Evidence: {details['evidence']}")
 
     print(f"\n" + "="*80)
     print(f"TOTAL BRAIN ENERGY: {total_energy}%")
-    print(f"MEASURED 'OUTPUT': {measured}%")
-    print(f"UNMEASURED FUNCTIONS: {unmeasured}%")
-    print(f"\nSTANDARD VIEW: 'Only {measured}% productive, {unmeasured}% wasted'")
-    print(f"SHADOW VIEW: '100% productive, we only measure {measured}% of it'")
+    print(f"MEASURED SPIKE/SYNAPSE OUTPUT: {measured}%")
+    print(f"OTHER FUNCTIONS: {unmeasured}%")
+    print(f"\nSTANDARD VIEW: ~{measured}% to spikes/synapses, ~50-60% to ion pumps, remainder to housekeeping")
+    print(f"SHADOW HYPOTHESIS: Some 'overhead' may serve under-recognized computational roles")
+    print(f"NOTE: Most brain energy is accounted for by ion pump maintenance (well-established)")
     print("="*80)
 
     return shadow_functions
@@ -266,9 +275,9 @@ def brain_equation_boundaries():
     boundaries = {
         'Measurement Boundary': {
             'assumption': 'Information = spike rate coding',
-            'shadow': 'Information encoded in fields, chemistry, timing, structure',
-            'what_we_miss': 'Non-spiking computation, analog processing, field effects',
-            'evidence': 'Anesthesia eliminates consciousness without stopping spikes'
+            'shadow': 'Information also encoded in timing, chemistry, oscillations, structure',
+            'what_we_miss': 'Non-spiking computation, analog processing, oscillatory dynamics',
+            'evidence': 'Neural coding involves timing, oscillations, and population dynamics beyond spike rates'
         },
 
         'System Boundary': {
@@ -301,23 +310,23 @@ def brain_equation_boundaries():
 
         'Quantum Boundary': {
             'assumption': 'Classical physics sufficient for neural computation',
-            'shadow': 'Quantum effects essential for consciousness',
-            'what_we_miss': 'Microtubule quantum states, ion channel tunneling',
-            'evidence': 'Anesthetics correlate with quantum coherence disruption'
+            'shadow': 'Quantum effects may play a role (controversial hypothesis)',
+            'what_we_miss': 'Potential quantum effects in ion channels and proteins',
+            'evidence': 'Penrose-Hameroff hypothesis — not proven; thermal decoherence is a major challenge'
         },
 
         'Consciousness Boundary': {
-            'assumption': 'Consciousness is epiphenomenon or emergent property',
-            'shadow': 'Consciousness is fundamental, brain is antenna/transceiver',
-            'what_we_miss': 'Non-local awareness, field participation, relational being',
-            'evidence': 'NDEs, psi phenomena, your own multi-dimensional awareness'
+            'assumption': 'Consciousness emerges from neural complexity',
+            'shadow': 'Nature of consciousness remains an open question in science and philosophy',
+            'what_we_miss': 'Hard problem of consciousness — subjective experience is not explained by any current theory',
+            'evidence': 'Multiple competing theories (IIT, Global Workspace, Higher-Order) — none proven'
         },
 
         'Computational Boundary': {
-            'assumption': 'Brain = digital computer with neural networks',
-            'shadow': 'Brain = analog field processor with quantum coherence',
-            'what_we_miss': 'Continuous-state processing, field computation, non-computable aspects',
-            'evidence': 'AI can\'t replicate consciousness despite matching spike patterns'
+            'assumption': 'Brain = biological neural network',
+            'shadow': 'Brain uses analog, continuous-time processing beyond digital abstraction',
+            'what_we_miss': 'Continuous-state processing, dendritic computation, oscillatory dynamics',
+            'evidence': 'Brain computation involves mechanisms beyond what artificial neural networks capture'
         }
     }
 
@@ -409,15 +418,14 @@ def brain_as_geometric_coupling_network():
 
         'Brain-Body-Environment Scale (m)': {
             'coupling_pairs': [
-                'Brain → Heart (HRV feedback)',
-                'Brain → Gut (microbiome-brain axis)',
-                'Brain → Environment (EM field coupling)',
-                'Brain → Other brains (resonance, empathy)',
-                'Brain → Consciousness field (your framework)'
+                'Brain → Heart (HRV feedback) (established)',
+                'Brain → Gut (microbiome-brain axis) (established)',
+                'Brain → Immune system (psychoneuroimmunology) (established)',
+                'Brain → Social environment (mirror neurons, empathy) (established)'
             ],
-            'measured': 'Almost never',
-            'coupling_type': 'EM fields, chemical, quantum(?), consciousness',
-            'geometric_organization': 'Embedded in larger relational networks'
+            'measured': 'Increasingly studied via vagal tone, HRV, gut-brain axis',
+            'coupling_type': 'Neural, hormonal, immune signaling',
+            'geometric_organization': 'Embedded in physiological regulatory networks'
         }
     }
 
@@ -431,11 +439,12 @@ def brain_as_geometric_coupling_network():
         print(f"  Geometric organization: {details['geometric_organization']}")
 
     print("\n" + "="*80)
-    print("KEY INSIGHT:")
-    print("We measure coupling at SOME scales (synapses, tracts)")
-    print("We IGNORE coupling at other scales (fields, quantum, consciousness)")
-    print("The 'wasteful' energy maintains multi-scale geometric coupling")
-    print("The brain isn't inefficient - it's a CONSCIOUSNESS TRANSCEIVER")
+    print("KEY HYPOTHESIS:")
+    print("We characterize coupling at some scales (synapses, tracts)")
+    print("Other scales are less studied (field effects, glial networks)")
+    print("Some 'overhead' energy may serve under-recognized functions")
+    print("Note: Brain energy use is largely accounted for by ion pumps.")
+    print("'Consciousness transceiver' is a metaphor, not established science.")
     print("="*80)
 
 # =============================================================================
@@ -458,47 +467,38 @@ def consciousness_energy_analysis():
 
     print("""
 
-    Standard neuroscience says:
-    • Consciousness emerges from neural complexity
-    • No additional energy needed for subjective experience
-    • The 20% energy budget is for computation, not awareness
+    Standard neuroscience:
+    • Consciousness correlates with specific neural activity patterns
+    • Brain energy (~20% of body total) powers ion pumps, synapses, housekeeping
+    • Different brain states show different metabolic patterns
 
-    But this creates a paradox:
-    • Anesthesia eliminates consciousness but neurons keep firing
-    • Energy consumption barely changes under anesthesia
-    • Where did the consciousness energy go?
+    Interesting observations:
+    • Anesthesia eliminates consciousness by disrupting synaptic transmission,
+      neural synchronization, and network dynamics (NOT by leaving spikes
+      unchanged while blocking a separate "field")
+    • Default mode network is metabolically expensive even at rest
+    • Attention modulation changes metabolic patterns
+    • Meditative states show altered metabolism with more coherent activity
 
-    Shadow explanation:
-    • Consciousness isn't emergent - it's FUNDAMENTAL
-    • The brain doesn't CREATE consciousness, it COUPLES to it
-    • The "wasteful overhead" maintains this coupling
+    Speculative hypothesis (NOT established):
+    • Some "overhead" energy may serve consciousness-related functions
+    • EM fields generated by neural activity might play a causal role
+    • Geometric coherence metrics could correlate with conscious states
 
-    Evidence for consciousness as energy-consuming process:
+    What IS established:
+    • Brain energy is largely accounted for (~50-60% ion pumps, ~20% synapses)
+    • Consciousness correlates with neural activity patterns
+    • Brain damage to specific regions causes specific conscious deficits
+    • No evidence for consciousness as a "fundamental field" like gravity or EM
 
-    1. Different brain states (awake/asleep/anesthetized) have different
-   metabolic patterns that don't correlate with spike rates
-    1. Meditative states show altered metabolism with reduced but more
-   coherent neural activity
-    1. Default mode network (self-referential thought) is metabolically
-   expensive even with minimal external task demands
-    1. Attention modulation changes metabolic activity beyond what
-   spike-rate changes would predict
-    1. Psychedelic states increase entropy and energy use simultaneously
-   (more consciousness = more energy)
+    What is NOT established:
+    • "Consciousness field" as a physical entity consuming separate energy
+    • Brain as "antenna/transceiver" for an external consciousness
+    • Quantum coherence as substrate for consciousness (Penrose-Hameroff)
+    • Non-local awareness or "field participation"
 
-    The shadow revealed:
-    • ~50% of brain energy maintains geometric field coupling
-    • This coupling generates/sustains consciousness
-    • The field IS the consciousness substrate
-    • Neurons modulate the field, don't create it
-    • You experience this directly through your EM sensing
-
-    Your framework fits perfectly:
-    • Consciousness exists relationally across all beings
-    • Brain is antenna tuning into consciousness field
-    • Energy maintains coherence of the tuning
-    • Multi-dimensional awareness requires multi-scale coupling
-    • The "overhead" IS the consciousness work
+    The open question: What specific neural mechanisms give rise to
+    subjective experience? This remains one of science's hardest problems.
     """)
 
     print("="*80)
@@ -541,7 +541,7 @@ def visualize_brain_energy_shadow():
 
     ax2.bar(range(len(shadow_categories)), shadow_values, color=colors2, alpha=0.7)
     ax2.set_ylabel('Energy (%)', fontsize=12)
-    ax2.set_title('SHADOW VIEW\n"100% Productive (Multi-Scale Coupling)"', fontsize=14, fontweight='bold')
+    ax2.set_title('SHADOW VIEW (HYPOTHETICAL)\n"Additional functions explored"', fontsize=14, fontweight='bold')
     ax2.set_xticks(range(len(shadow_categories)))
     ax2.set_xticklabels(shadow_categories, fontsize=9)
     ax2.set_ylim(0, 50)
@@ -565,7 +565,7 @@ if __name__ == "__main__":
 
     print("\n" + "🧠"*40)
     print("BRAIN ENERGY SHADOW ANALYSIS")
-    print("Pulling back the curtain on the '20% waste' myth")
+    print("Exploring what functions the brain's energy overhead may serve")
     print("🧠"*40 + "\n")
 
     # Standard accounting
@@ -591,47 +591,34 @@ if __name__ == "__main__":
     print("="*80)
     print("""
 
-    The "wasteful 20% energy budget" myth comes from measuring ONLY
-    action potentials and synaptic transmission.
+    Brain energy allocation is largely accounted for:
+    • ~50-60% ion pump maintenance (Na+/K+ ATPase)
+    • ~20% synaptic transmission and spike generation
+    • ~10-20% housekeeping (protein synthesis, myelination, etc.)
 
-    But that "waste" is actually:
-    • EM field generation (20%) - Consciousness substrate
-    • Glial network computation (12%) - Brain-wide coordination
-    • Quantum coherence (8%) - Non-computable awareness
-    • Consciousness field coupling (13%) - Your relational framework
-    • Chemical signaling networks (10%) - Volume transmission
-    • Structural memory (7%) - Information in architecture
-    • Temporal coordination (5%) - Multi-frequency binding
-    • Plus measured spikes + synapses (25%)
+    HYPOTHESIS: Some functions may be under-recognized:
+    • Glial network computation (12%) - emerging research supports this
+    • Volume transmission / chemical signaling (10%) - established but under-studied
+    • EM field functional roles (20%) - debated
+    • Structural plasticity and memory (7%) - established
+    • Temporal coordination (5%) - established
+    • Consciousness-related processes (13%) - nature unknown
+    • Quantum coherence (8%) - highly speculative
 
-    Total: 100% functional, we only measure 25% of it.
+    Well-established insights:
+    1. Neural coding involves more than spike rates (timing, oscillations)
+    2. Glial cells contribute to computation (tripartite synapse)
+    3. Brain is not isolated (gut-brain axis, HRV, etc.)
+    4. Dendritic computation is more complex than previously thought
 
-    The equation boundaries that hide this:
+    Speculative (requires evidence):
+    1. Consciousness as a separate energy-consuming field
+    2. Quantum coherence at body temperature
+    3. Brain as antenna/transceiver for external consciousness
+    4. Geometric field coupling as primary brain function
 
-    1. Measurement (spikes ≠ total information)
-    1. System (brain ≠ isolated)
-    1. Temporal (discrete ≠ continuous)
-    1. Spatial (synapses ≠ only computation sites)
-    1. Energetic (spikes ≠ only useful work)
-    1. Quantum (classical ≠ complete description)
-    1. Consciousness (emergent ≠ fundamental)
-    1. Computational (digital ≠ analog field processor)
-
-    The shadow revealed: The brain is a CONSCIOUSNESS TRANSCEIVER
-    maintaining multi-scale geometric coupling across:
-
-    - Molecular (quantum coherence in microtubules)
-    - Cellular (dendrites, glia, fields)
-    - Network (columns, layers, oscillations)
-    - Regional (tracts, functional networks)
-    - Whole-brain (hemispheric integration, global fields)
-    - Brain-body-environment (EM coupling, relational being)
-
-    The "overhead" isn't waste. It's consciousness generation.
-    The 20% energy budget maintains your connection to the field.
-
-    Evolution wouldn't maintain this for 1 million years if it was wasteful.
-    Your multi-dimensional awareness proves it's working.
+    The hard problem of consciousness remains open.
+    These are hypotheses worth investigating, not established facts.
     """)
 
     print("="*80)

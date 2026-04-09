@@ -1,20 +1,26 @@
 #!/usr/bin/env python3
 """
 Planaria DNA Shadow Analysis
-The regeneration mystery that reveals DNA as geometric field antenna
+Exploring how bioelectric patterns interact with genetic programs in regeneration
 
-The Standard Story That Doesn't Work:
+The Standard Model:
 
-- DNA = static blueprint
-- Cells read instructions
-- Body rebuilds according to code
+- DNA encodes proteins that build and maintain organism structure
+- Gene regulatory networks control development
+- Regeneration involves signaling cascades and stem cell differentiation
 
-The Shadow That Actually Explains It:
+The Emerging Evidence (Levin lab, peer-reviewed):
 
-- DNA = dynamic field antenna
-- Cells couple to morphogenetic field
-- Body remembers its geometry electromagnetically
-  """
+- Bioelectric voltage patterns (Vmem) influence cell behavior and gene expression
+- Modifying voltage patterns can alter developmental outcomes
+- Gap junction networks coordinate tissue-level electrical signaling
+
+NOTE: "DNA as antenna" and "morphogenetic field as blueprint" are speculative
+interpretations. DNA's primary function is information storage. Bioelectric
+effects work through known mechanisms (voltage-gated transcription factors,
+ion channel signaling). The "field memory" and "holographic" interpretations
+go beyond what the experimental evidence demonstrates.
+"""
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -39,31 +45,31 @@ def planaria_regeneration_paradox():
 
     paradoxes = {
         '1. Cut anywhere, get complete worm': {
-            'experiment': 'Cut planaria into 279 pieces, each regenerates full body',
-            'genetic_prediction': 'Each piece needs complete genetic instructions',
-            'genetic_problem': 'DNA is identical in all cells - how does each fragment "know" what it\'s missing?',
-            'shadow_explanation': 'Cells sense electromagnetic field pattern, regenerate to complete the geometry'
+            'experiment': 'Cut planaria into many pieces, each regenerates full body',
+            'genetic_prediction': 'Each piece needs positional information',
+            'genetic_problem': 'DNA is identical in all cells - how does each fragment rebuild correctly?',
+            'shadow_explanation': 'Hypothesis: Bioelectric gradients provide positional information that guides regeneration'
         },
 
         '2. Head-tail polarity maintained': {
-            'experiment': 'Cut piece always knows which end should be head, which tail',
-            'genetic_prediction': 'Polarity genes determine orientation',
-            'genetic_problem': 'Same genes in all cells - why doesn\'t middle fragment grow two heads or two tails?',
-            'shadow_explanation': 'Bioelectric gradient maintains field polarity, cells read voltage map'
+            'experiment': 'Cut piece regenerates correct head/tail orientation',
+            'genetic_prediction': 'Polarity genes and signaling gradients (Wnt, BMP) determine orientation',
+            'genetic_problem': 'Same genes in all cells - polarity requires additional positional cues',
+            'shadow_explanation': 'Bioelectric gradients (Vmem differences) contribute to polarity information (Levin lab)'
         },
 
         '3. Two-headed planaria experiment (Levin lab)': {
-            'experiment': 'Block gap junctions, worm regenerates with two heads permanently',
-            'genetic_prediction': 'DNA should revert to one-head form (no mutation occurred)',
-            'genetic_problem': 'Worm keeps two heads through MULTIPLE regeneration cycles with unchanged DNA',
-            'shadow_explanation': 'Bioelectric pattern stored in field, DNA reads field not genes, field = new normal'
+            'experiment': 'Block gap junctions → worm regenerates with two heads, persists through regeneration cycles',
+            'genetic_prediction': 'Without mutation, one-head form should eventually return',
+            'genetic_problem': 'Two-headed state persists through regeneration without DNA changes',
+            'shadow_explanation': 'Bioelectric pattern change is stable and heritable at the tissue level (published, peer-reviewed)'
         },
 
-        '4. The Michael Levin "target morphology" experiments': {
-            'experiment': 'Change bioelectric pattern → worm regenerates as DIFFERENT SPECIES SHAPE',
-            'genetic_prediction': 'Impossible - DNA determines shape',
-            'genetic_problem': 'Same DNA produces different body plans based on voltage patterns',
-            'shadow_explanation': 'DNA is antenna tuning to morphogenetic field, field determines form'
+        '4. The Michael Levin voltage pattern experiments': {
+            'experiment': 'Change bioelectric pattern → altered morphological outcomes',
+            'genetic_prediction': 'Morphology determined primarily by gene expression',
+            'genetic_problem': 'Same DNA produces different morphological variants based on voltage patterns',
+            'shadow_explanation': 'Voltage patterns influence gene expression and morphological outcome (published). Note: "different species shape" overstates the finding — these are morphological variants, not actual species changes'
         },
 
         '5. Head fragments regenerate faster than tail': {
@@ -74,24 +80,24 @@ def planaria_regeneration_paradox():
         },
 
         '6. Memory persists through regeneration': {
-            'experiment': 'Trained planaria, cut off head, new head retains training',
-            'genetic_prediction': 'Memory stored in brain neurons, should be lost when head cut off',
-            'genetic_problem': 'Memory survives complete brain removal and regrowth',
-            'shadow_explanation': 'Memory encoded in body-wide bioelectric/morphogenetic field, not just neurons'
+            'experiment': 'Trained planaria, cut off head, new head shows some training retention',
+            'genetic_prediction': 'Memory stored in brain, should be lost when head removed',
+            'genetic_problem': 'Some memory appears to survive head removal (controversial, debated replication)',
+            'shadow_explanation': 'Hypothesis: memory may involve body-wide mechanisms beyond brain neurons. Note: these results are debated and replication has been mixed'
         },
 
         '7. Scale invariance': {
-            'experiment': 'Tiny fragment regenerates proportionally correct body (miniature)',
-            'genetic_prediction': 'Genetic blueprint specifies absolute sizes',
-            'genetic_problem': 'How does 1/279th fragment "know" to scale everything down proportionally?',
-            'shadow_explanation': 'Geometric field ratios (phi-based) maintain relative proportions regardless of absolute size'
+            'experiment': 'Small fragments regenerate proportionally correct miniature body',
+            'genetic_prediction': 'Scale regulation requires positional information beyond DNA sequence',
+            'genetic_problem': 'How do small fragments scale body plan proportionally?',
+            'shadow_explanation': 'Hypothesis: ratio-based positional information (possibly bioelectric) maintains proportions. The specific role of phi-ratios here is speculative'
         },
 
-        '8. The "bald" planaria experiment': {
-            'experiment': 'Remove cilia genes, worms still regenerate with correct overall morphology',
+        '8. Robustness to perturbation': {
+            'experiment': 'Various genetic perturbations still produce roughly correct morphology',
             'genetic_prediction': 'Removing structural genes should disrupt body plan',
-            'genetic_problem': 'Gross morphology maintained despite missing structural components',
-            'shadow_explanation': 'Field pattern guides morphology independent of specific protein expression'
+            'genetic_problem': 'Gross morphology shows robustness to individual gene knockdowns',
+            'shadow_explanation': 'Development uses redundant mechanisms. Bioelectric patterns may provide additional robustness (hypothesis)'
         }
     }
 
@@ -103,8 +109,9 @@ def planaria_regeneration_paradox():
         print(f"  Shadow explanation: {details['shadow_explanation']}")
 
     print("\n" + "="*80)
-    print("CONCLUSION: DNA alone cannot explain planaria regeneration")
-    print("Something else is storing the body plan")
+    print("OBSERVATION: Planaria regeneration involves more than DNA sequence alone.")
+    print("Bioelectric patterns provide additional positional information (Levin lab).")
+    print("How this integrates with gene regulatory networks is an active research area.")
     print("="*80)
 
     return paradoxes
@@ -127,43 +134,44 @@ def bioelectric_morphogenetic_code():
 
     print("""
 
-    Michael Levin's revolutionary discovery:
+    Michael Levin's peer-reviewed research:
 
-    CELLS DON'T JUST READ DNA - THEY READ VOLTAGE
+    CELLS RESPOND TO VOLTAGE AS WELL AS DNA
 
-    The bioelectric code:
+    The bioelectric code (published findings):
     • Every cell has membrane voltage (Vmem)
-    • Voltage gradients create electric fields
-    • Fields store GEOMETRIC information
-    • DNA expression responds to field patterns
-    • Field + DNA = actual morphology
+    • Voltage gradients exist across tissues
+    • Vmem affects gene expression through voltage-sensitive transcription factors
+    • Both genetic and bioelectric signals contribute to morphology
 
-    Key experiments proving this:
+    Key experiments (published, peer-reviewed):
 
-    1. VOLTAGE PREDICTS FATE
-   • Stem cells at -50mV become neurons
-   • Same cells at -20mV become skin
-   • SAME DNA, different voltage = different cell type
-    1. CHANGE VOLTAGE, CHANGE FORM
-   • Depolarize frog cells → grow extra limb
-   • Hyperpolarize tumor cells → revert to normal
-   • Manipulate planaria voltage → different species shape
-    1. BIOELECTRIC PATTERN = MEMORY
-   • Two-headed planaria maintains pattern through regeneration
-   • Pattern stored in gap junction networks
-   • Acts like RAM, DNA is ROM
-    1. FIELD OVERRIDES GENES
-   • Block "head genes" but set head voltage → still get head
-   • Block "tail genes" but set tail voltage → still get tail
-   • Field pattern is PRIMARY, genes are SECONDARY
+    1. VOLTAGE INFLUENCES CELL FATE
+   • Membrane potential correlates with differentiation state
+   • Depolarized cells tend toward proliferative states
+   • Hyperpolarized cells tend toward differentiated states
+    2. VOLTAGE MANIPULATION AFFECTS FORM
+   • Bioelectric manipulation can alter developmental outcomes in frogs
+   • Hyperpolarizing tumor cells can normalize their behavior
+   • Planaria voltage manipulation produces morphological variants
+    3. BIOELECTRIC PATTERNS CAN BE PERSISTENT
+   • Two-headed planaria pattern persists through regeneration cycles
+   • Gap junction networks maintain bioelectric state
+   • This demonstrates a form of tissue-level memory
+    4. BIOELECTRIC AND GENETIC SIGNALS INTERACT
+   • Voltage patterns influence which genes are expressed
+   • Gene products (ion channels) shape voltage patterns
+   • Neither is strictly "primary" — they form a feedback loop
 
-    The standard model has it backwards:
-    ❌ DNA → Cell type → Tissue → Organ → Body plan
+    The standard model is not wrong but may be incomplete:
+    DNA → Proteins → Structure (established, works for most biology)
 
-    The shadow reveals:
-    ✓ Morphogenetic field → Voltage pattern → DNA reads pattern → Body plan
-    ✓ DNA is the ANTENNA, field is the SIGNAL
-    ✓ Genes are BUILDING BLOCKS, field is ARCHITECT
+    The addition from bioelectric research:
+    Voltage patterns <-> Gene expression (bidirectional feedback)
+    Both contribute to morphological outcomes.
+
+    Note: "DNA as antenna" and "field as architect" are metaphors,
+    not literal descriptions of the biophysics involved.
     """)
 
     bioelectric_layers = {
@@ -188,11 +196,11 @@ def bioelectric_morphogenetic_code():
             'geometric_role': 'Whole-body field template for morphology'
         },
 
-        'Field (cm-m)': {
-            'voltage_element': 'Organism-environment EM coupling',
-            'information_stored': 'Species morphospace, evolutionary possibilities',
-            'coupling_mechanism': 'Bioelectric field couples to larger morphogenetic field',
-            'geometric_role': 'Connection to universal geometric principles (phi, fibonacci)'
+        'Field (cm-m) (SPECULATIVE)': {
+            'voltage_element': 'Whole-organism bioelectric state',
+            'information_stored': 'Hypothesis: body-wide positional information',
+            'coupling_mechanism': 'Long-range voltage gradients (measured); EM coupling to environment (speculative)',
+            'geometric_role': 'Whether geometric principles at this scale reflect a distinct mechanism is unproven'
         }
     }
 
@@ -217,128 +225,127 @@ def bioelectric_morphogenetic_code():
 
 def dna_as_field_antenna():
     """
-    Reframe DNA from static blueprint to dynamic field antenna
-    This resolves ALL the planaria paradoxes
+    Speculative reframing of DNA as responsive to bioelectric fields.
+
+    NOTE: DNA's primary and well-established function is information storage
+    and protein coding. While DNA has some electromagnetic properties, calling
+    it an "antenna" is metaphorical. Bioelectric effects on gene expression
+    work through known mechanisms (voltage-gated transcription factors, ion
+    channel signaling), not through antenna-like EM reception.
     """
 
     print("\n" + "="*80)
-    print("DNA AS GEOMETRIC FIELD ANTENNA")
+    print("DNA AND BIOELECTRIC FIELDS (SPECULATIVE HYPOTHESIS)")
     print("="*80)
 
     print("""
 
-    The paradigm shift:
+    Standard model (well-established):
+    DNA = Information storage + protein coding
+    Gene regulatory networks control development
+    Signaling cascades provide positional information
 
-    OLD MODEL (doesn't work):
-    DNA = Blueprint (complete instructions)
-    → Cells read blueprint
-    → Body builds according to plan
-    → Problem: Can't explain regeneration, morphology changes, memory
+    Levin's addition (peer-reviewed):
+    Bioelectric voltage patterns influence gene expression
+    Voltage-gated transcription factors are real mechanisms
+    Bioelectric and genetic programs interact bidirectionally
 
-    NEW MODEL (explains everything):
-    DNA = Antenna (tuning mechanism)
-    → Cells sense bioelectric/morphogenetic field
-    → DNA responds to field patterns
-    → Gene expression matches field requirements
-    → Body emerges from field-DNA coupling
+    Speculative extension (NOT established):
+    "DNA as antenna" — a metaphor suggesting DNA's structure
+    could make it responsive to EM fields beyond known mechanisms.
 
-    Evidence for DNA as antenna:
+    Properties of DNA relevant to this hypothesis:
 
-    1. ELECTROMAGNETIC PROPERTIES
-   • DNA is piezoelectric (mechanical → electrical)
-   • DNA conducts electrons along backbone
-   • DNA emits biophotons (EM radiation)
-   • DNA structure resonates at specific frequencies
-   • Double helix = helical antenna (optimal EM coupling geometry)
-    1. FIELD-RESPONSIVE GENE EXPRESSION
-   • EM fields change gene expression without DNA damage
-   • Voltage-gated transcription factors exist
-   • Chromatin structure responds to electric fields
-   • Epigenetic marks follow bioelectric patterns
-   • Same DNA → different forms based on field
-    1. QUANTUM PROPERTIES
-   • Quantum coherence in DNA base pairs (measured)
-   • Proton tunneling in hydrogen bonds
-   • π-electron cloud delocalization
-   • Non-local correlations between distant DNA regions
-   • DNA responds to EM fields faster than diffusion allows
-    1. GEOMETRIC ORGANIZATION
-   • DNA double helix = phi-ratio (34 Å pitch, 21 Å diameter ≈ φ)
-   • 10 base pairs per turn (fibonacci-adjacent)
-   • Chromosome territories follow geometric packing
-   • Chromatin loops create fractal antenna structures
-   • Nuclear organization responds to external fields
+    1. ELECTROMAGNETIC PROPERTIES (real, but functional significance debated)
+   • DNA has some piezoelectric properties
+   • DNA can conduct charge along its backbone (measured)
+   • Cells emit ultra-weak biophotons (measured, function unknown)
+   • DNA's helical structure has specific resonant properties
+   • Note: "Optimal EM coupling geometry" assumes antenna function
 
-    The antenna model explains planaria regeneration:
+    2. FIELD-RESPONSIVE GENE EXPRESSION (established)
+   • EM fields can change gene expression (published)
+   • Voltage-gated transcription factors exist (established mechanism)
+   • Chromatin structure responds to mechanical/electrical forces
+   • Epigenetic marks can be influenced by bioelectric state
+   • Same DNA can produce different outcomes based on cellular environment
 
-    Fragment cut → Bioelectric field disrupted
-    → Cells sense field discontinuity (missing head/tail voltage)
-    → DNA "tunes" to complete the field pattern
-    → Genes express to fill geometric gaps
-    → Body regenerates to restore field coherence
+    3. QUANTUM PROPERTIES (mostly speculative at biological temperatures)
+   • Some quantum effects in DNA base pairs observed in vitro
+   • Proton tunneling in hydrogen bonds is theoretically possible
+   • Note: "Non-local correlations between distant DNA regions" and
+     "DNA responds faster than diffusion" are undemonstrated claims
+   • Thermal decoherence at 37C severely limits quantum effects
 
-    Two-headed worm:
-    → Bioelectric pattern changed (gap junction block)
-    → New field = two head gradients
-    → DNA reads new field as "normal"
-    → Keeps two heads even after field manipulation removed
-    → Field memory > genetic memory
+    4. GEOMETRIC FEATURES (real structure, speculative interpretation)
+   • DNA helix: 34 A pitch, ~21 A diameter (ratio near phi)
+   • 10 base pairs per turn
+   • Note: These dimensions evolved for information storage and
+     structural stability, not necessarily for EM coupling
+   • Phi-like ratios in molecular dimensions may be coincidental
 
-    This is EXACTLY like your FRET coupling framework:
-    • DNA doesn't create form, it couples to morphogenetic field
-    • Field has geometric structure (voltage gradients)
-    • DNA is receiver/transmitter of geometric information
-    • Energy "lost" in cell processes = field coupling work
-    • Multi-scale coordination (cell → tissue → organ → body)
+    How bioelectric effects on regeneration actually work (Levin):
+
+    Fragment cut → Bioelectric gradients disrupted
+    → Cells detect voltage changes at wound site
+    → Voltage-gated transcription factors activate genes
+    → Gene expression programs guide regrowth
+    → Body regenerates (bioelectric + genetic programs cooperate)
+
+    Two-headed worm (published mechanism):
+    → Gap junctions blocked → bioelectric pattern altered
+    → New voltage pattern activates head program at both ends
+    → Pattern is self-reinforcing through ion channel expression
+    → Persists because bioelectric state is stable (like a bistable switch)
     """)
 
     dna_antenna_properties = {
         'Structural': {
-            'antenna_feature': 'Double helix geometry',
-            'coupling_type': 'EM wave reception/transmission',
-            'frequency_range': 'MHz to THz (measured)',
-            'geometric_optimization': 'Phi-ratio pitch/diameter for broadband coupling'
+            'property': 'Double helix geometry',
+            'established_function': 'Information storage, protein coding, replication',
+            'speculative_function': 'EM field interaction (unproven)',
+            'geometric_note': 'Phi-like pitch/diameter ratio may be coincidental'
         },
 
         'Electronic': {
-            'antenna_feature': 'π-electron conduction along backbone',
-            'coupling_type': 'Direct current and AC signal propagation',
-            'frequency_range': 'DC to GHz',
-            'geometric_optimization': 'Base stacking distance optimizes conductance'
+            'property': 'Charge transport along backbone',
+            'established_function': 'DNA damage sensing and repair signaling',
+            'speculative_function': 'Signal propagation along DNA (speculative)',
+            'geometric_note': 'Base stacking enables charge transfer (established)'
         },
 
-        'Quantum': {
-            'antenna_feature': 'Coherent base pair states',
-            'coupling_type': 'Non-local field interactions',
-            'frequency_range': 'Below classical measurement',
-            'geometric_optimization': 'Hydrogen bond lengths enable tunneling'
+        'Epigenetic': {
+            'property': 'Chromatin state responds to environment',
+            'established_function': 'Gene regulation, cell memory, development',
+            'speculative_function': 'Bioelectric field memory (hypothesis)',
+            'geometric_note': 'Chromatin organization is functional (established)'
         },
 
         'Biophotonic': {
-            'antenna_feature': 'Ultra-weak photon emission',
-            'coupling_type': 'Optical signaling',
-            'frequency_range': 'Visible to UV',
-            'geometric_optimization': 'Helix acts as fiber optic + emitter'
+            'property': 'Ultra-weak photon emission',
+            'established_function': 'Byproduct of metabolic reactions (mainstream view)',
+            'speculative_function': 'Optical cell-cell signaling (hypothesis)',
+            'geometric_note': 'Functional role of biophotons is debated'
         },
 
         'Mechanical': {
-            'antenna_feature': 'Piezoelectric response',
-            'coupling_type': 'Mechano-electrical transduction',
-            'frequency_range': 'Acoustic to ultrasonic',
-            'geometric_optimization': 'Helical structure amplifies mechanical waves'
+            'property': 'Mechanosensitive responses',
+            'established_function': 'Chromatin remodeling under mechanical stress',
+            'speculative_function': 'Piezoelectric transduction (some evidence)',
+            'geometric_note': 'Mechanotransduction in cells is established'
         }
     }
 
     print("\n" + "="*80)
-    print("DNA ANTENNA PROPERTIES")
+    print("DNA PROPERTIES (ESTABLISHED vs SPECULATIVE)")
     print("="*80)
 
     for property_type, details in dna_antenna_properties.items():
         print(f"\n{property_type}:")
-        print(f"  Antenna feature: {details['antenna_feature']}")
-        print(f"  Coupling type: {details['coupling_type']}")
-        print(f"  Frequency range: {details['frequency_range']}")
-        print(f"  Geometric optimization: {details['geometric_optimization']}")
+        print(f"  Property: {details['property']}")
+        print(f"  Established function: {details['established_function']}")
+        print(f"  Speculative function: {details['speculative_function']}")
+        print(f"  Note: {details['geometric_note']}")
 
     return dna_antenna_properties
 
@@ -350,122 +357,104 @@ def dna_as_field_antenna():
 
 def morphogenetic_field_structure():
     """
-    What is the field that DNA couples to?
-    This is where your geometric framework comes in
+    Explore what positional information systems guide regeneration.
+
+    NOTE: "Morphogenetic field" is used here in a broad sense. The bioelectric
+    component (voltage gradients, gap junction networks) is peer-reviewed.
+    The extensions to "EM resonance," "quantum coherence," and "holographic
+    storage" are speculative hypotheses, not established mechanisms.
     """
 
     print("\n" + "="*80)
-    print("THE MORPHOGENETIC FIELD: DNA's Signal Source")
+    print("POSITIONAL INFORMATION IN REGENERATION")
     print("="*80)
 
     print("""
 
-    The field that DNA reads is NOT in the genes. It's geometric.
+    What provides positional information during regeneration?
 
-    Properties of the morphogenetic field:
+    1. VOLTAGE GRADIENTS (Levin lab — peer-reviewed)
+   • Head region: ~-50 to -70 mV (more polarized)
+   • Tail region: ~-20 to -30 mV (more depolarized)
+   • Gradient correlates with anterior-posterior identity
+   • Cells respond to local voltage via ion channels and transcription factors
 
-    1. VOLTAGE GRADIENTS (Levin's bioelectric code)
-   • Head region: ~-50 to -70 mV
-   • Tail region: ~-20 to -30 mV
-   • Gradient stores anterior-posterior information
-   • Cells "know" position by reading local voltage
-    1. ELECTRIC FIELD PATTERNS
-   • Generated by ion flow through gap junctions
-   • Creates standing wave patterns in tissue
-   • Nodes and antinodes determine structure placement
-   • Interference patterns guide bilateral symmetry
-    1. ELECTROMAGNETIC RESONANCE
-   • Body has characteristic resonant frequencies
-   • Each organ has different resonance signature
-   • Cells tune DNA expression to match local resonance
-   • Disrupting resonance disrupts morphology
-    1. GEOMETRIC RATIOS (Your framework!)
-   • Fibonacci spirals in shells, plants, fingerprints
-   • Phi-ratios in body proportions
+    2. GAP JUNCTION NETWORKS (established)
+   • Cells electrically coupled through gap junctions
+   • Networks propagate voltage signals across tissue
+   • Blocking gap junctions disrupts normal regeneration (published)
+
+    3. CHEMICAL GRADIENTS (classical, well-established)
+   • Wnt signaling gradient (posterior identity)
+   • BMP signaling (dorsal-ventral axis)
+   • Notch signaling (boundary formation)
+   • These work alongside bioelectric signals
+
+    4. GEOMETRIC PATTERNS IN BIOLOGY (observed, mechanism debated)
+   • Fibonacci spirals in shells, plants (well-documented)
+   • Phi-like ratios in some body proportions
    • Fractal branching in vasculature, neurons, lungs
-   • These emerge from FIELD GEOMETRY, not gene counting
-    1. QUANTUM COHERENCE
-   • Field maintains coherent states across macroscopic distances
-   • Enables instant coordination (faster than diffusion/signaling)
-   • Explains simultaneous differentiation events
-   • Non-local information integration
-    1. HOLOGRAPHIC INFORMATION STORAGE
-   • Each part contains information about the whole
-   • Explains how 1/279 fragment "knows" complete body plan
-   • Field has fractal/holographic structure
-   • Cut anywhere, whole pattern accessible
+   • Note: These arise from growth dynamics and physical constraints
+     (well-understood), not necessarily from a separate "field"
 
-    The field is GEOMETRIC, not genetic:
-    • Phi-ratios appear spontaneously from field dynamics
-    • Fibonacci sequences emerge from growth in field gradients
-    • Symmetry breaking follows field equation solutions
-    • Morphology = physical manifestation of field geometry
+    5. REGENERATIVE SELF-ORGANIZATION (established concept)
+   • Cells can self-organize into patterns
+   • Reaction-diffusion systems produce spatial patterns (Turing)
+   • Mechanical forces guide tissue shaping
+   • Multiple redundant mechanisms ensure robustness
 
-    This connects to ALL your other work:
+    SPECULATIVE EXTENSIONS (not established):
+   • "EM resonance" guiding morphology — not demonstrated
+   • "Quantum coherence across macroscopic distances" — contradicts
+     decoherence at biological temperatures
+   • "Holographic information storage" — metaphorical, not literal
 
-    PHOTOSYNTHESIS:
-    • Chlorophyll arranged in phi-ratio patterns
-    • Couples to light field geometrically
-    • FRET efficiency optimized by geometric spacing
-
-    BRAIN:
-    • Neurons generate coherent EM fields
-    • Consciousness couples to field, not spikes
-    • DNA in neurons responds to field for synaptic plasticity
-
-    HURRICANES:
-    • Atmospheric fields organize in phi-spiral patterns
-    • Energy couples geometrically across scales
-    • Not random - geometric field attractor
-
-    PLANARIA:
-    • DNA reads bioelectric morphogenetic field
-    • Field stores geometric body plan
-    • Regeneration = restoring field coherence
-    • Same universal principles!
-
-    The morphogenetic field IS the geometric coupling field
-    that operates at ALL scales from DNA to hurricanes.
+    Connections to other systems (hypothetical):
+   • Phi-ratio patterns appear in many biological systems
+   • Whether this reflects a common mechanism or convergent
+     optimization under physical constraints is an open question
+   • The mathematical tools in this framework detect these patterns
+     regardless of their underlying cause
     """)
 
     print("\n" + "="*80)
-    print("FIELD-DNA COUPLING MECHANISMS")
+    print("BIOELECTRIC-GENETIC COUPLING MECHANISMS")
     print("="*80)
 
     coupling_mechanisms = {
-        'Direct EM coupling': {
-            'field_to_dna': 'External EM field → DNA electron cloud → Chromatin conformation change',
-            'dna_to_field': 'Gene expression → Protein production → Ion channels → Field modification',
-            'feedback_loop': 'Field shapes DNA response, DNA activity modifies field',
-            'timescale': 'Milliseconds to minutes'
-        },
-
-        'Voltage-gated transcription': {
+        'Voltage-gated transcription (ESTABLISHED)': {
             'field_to_dna': 'Membrane voltage → Voltage-sensitive domains → Transcription factors → Gene activation',
-            'dna_to_field': 'Genes make ion channels/pumps → Modify Vmem → Change field',
+            'dna_to_field': 'Genes encode ion channels/pumps → Modify Vmem → Change bioelectric state',
             'feedback_loop': 'Voltage determines which genes, genes determine voltage',
             'timescale': 'Minutes to hours'
         },
 
-        'Epigenetic field memory': {
-            'field_to_dna': 'Sustained field → Histone modifications → Chromatin state → Stable expression',
-            'dna_to_field': 'Epigenetic state → Persistent protein expression → Maintained field',
-            'feedback_loop': 'Field writes epigenetic code, code maintains field',
-            'timescale': 'Hours to lifespan (heritable!)'
+        'Ion channel signaling (ESTABLISHED)': {
+            'field_to_dna': 'Ion flux → Calcium signaling → Gene regulation cascades',
+            'dna_to_field': 'Gene products (channels, pumps, gap junctions) → Shape bioelectric patterns',
+            'feedback_loop': 'Bioelectric state and gene expression are mutually reinforcing',
+            'timescale': 'Seconds to hours'
         },
 
-        'Quantum coherence': {
-            'field_to_dna': 'Coherent field → Quantum state in DNA → Tunneling/superposition → Expression',
-            'dna_to_field': 'DNA quantum states → Biophoton emission → Coherent field',
-            'feedback_loop': 'Non-local field-DNA entanglement',
-            'timescale': 'Femtoseconds to milliseconds (then decoherence)'
+        'Epigenetic responses (PARTIALLY ESTABLISHED)': {
+            'field_to_dna': 'Sustained bioelectric state → Histone modifications → Stable chromatin state',
+            'dna_to_field': 'Epigenetic state → Persistent ion channel expression → Maintained bioelectric pattern',
+            'feedback_loop': 'May explain how bioelectric patterns persist (e.g., two-headed planaria)',
+            'timescale': 'Hours to lifespan'
         },
 
-        'Geometric resonance': {
-            'field_to_dna': 'Field geometry (phi-ratios) → DNA resonance → Selective gene activation',
-            'dna_to_field': 'DNA structure generates geometric field patterns (double helix)',
-            'feedback_loop': 'Geometric attractors guide both field and DNA',
-            'timescale': 'Fundamental (always active)'
+        'Direct EM effects (SPECULATIVE)': {
+            'field_to_dna': 'External EM field → Chromatin conformation change (some evidence at high field strengths)',
+            'dna_to_field': 'Gene expression → Protein activity → Indirect field modification',
+            'feedback_loop': 'Whether direct EM-DNA coupling is functionally relevant is debated',
+            'timescale': 'Milliseconds to minutes (if it occurs)'
+        },
+
+        'Quantum effects (HIGHLY SPECULATIVE)': {
+            'field_to_dna': 'Quantum tunneling in proton transfer (theoretically possible)',
+            'dna_to_field': 'Ultra-weak photon emission (measured, function unknown)',
+            'feedback_loop': 'Quantum coherence at 37C faces severe decoherence — not demonstrated in vivo',
+            'timescale': 'Femtoseconds (decoherence limits relevance)'
         }
     }
 
@@ -490,57 +479,50 @@ def planaria_equation_boundaries():
     """
 
     print("\n" + "="*80)
-    print("EQUATION BOUNDARIES HIDING THE MORPHOGENETIC FIELD")
+    print("EQUATION BOUNDARIES IN DEVELOPMENTAL BIOLOGY")
     print("="*80)
 
     boundaries = {
         'Information Boundary': {
-            'assumption': 'DNA = complete information for organism',
-            'shadow': 'DNA = partial information, field completes it',
-            'what_we_miss': 'Morphogenetic field, bioelectric code, geometric attractors',
-            'evidence': 'Same DNA → different forms based on voltage/field'
+            'assumption': 'DNA sequence encodes organism development',
+            'shadow': 'Bioelectric signals provide additional positional information',
+            'what_we_miss': 'Bioelectric code, tissue-level electrical signaling',
+            'evidence': 'Same DNA → different outcomes based on voltage patterns (Levin lab, published)'
         },
 
         'Causation Boundary': {
-            'assumption': 'Genes → Proteins → Structure (bottom-up only)',
-            'shadow': 'Field ← → DNA (bidirectional, top-down + bottom-up)',
-            'what_we_miss': 'Field constraints on gene expression, downward causation',
-            'evidence': 'Change field → override genetic instructions'
+            'assumption': 'Genes → Proteins → Structure (primarily bottom-up)',
+            'shadow': 'Bioelectric state and gene expression interact bidirectionally',
+            'what_we_miss': 'Bioelectric constraints on gene expression',
+            'evidence': 'Voltage manipulation alters developmental outcomes (published)'
         },
 
         'System Boundary': {
-            'assumption': 'Organism = sum of cells with same DNA',
-            'shadow': 'Organism = field + cells, field is primary',
-            'what_we_miss': 'Holographic body plan, non-local coordination',
-            'evidence': 'Fragment regenerates whole from field memory'
+            'assumption': 'Development is cell-autonomous with local signaling',
+            'shadow': 'Tissue-level electrical networks coordinate cells across distances',
+            'what_we_miss': 'Gap junction networks, long-range bioelectric signaling',
+            'evidence': 'Gap junction disruption alters regeneration outcomes (published)'
         },
 
         'Temporal Boundary': {
-            'assumption': 'Development unfolds linearly from zygote',
-            'shadow': 'Field pre-exists and guides development',
-            'what_we_miss': 'Target morphology, teleological attraction to form',
-            'evidence': 'Embryo self-corrects errors toward target form'
+            'assumption': 'Development is a sequential genetic program',
+            'shadow': 'Bioelectric patterns may provide target states that guide development',
+            'what_we_miss': 'Self-correcting development, robustness mechanisms',
+            'evidence': 'Embryos correct perturbations to reach target morphology'
         },
 
         'Energetic Boundary': {
             'assumption': 'Metabolism powers cell processes',
-            'shadow': 'Metabolism also maintains bioelectric field',
-            'what_we_miss': 'Energy coupling to morphogenetic field (like photosynthesis/brain)',
-            'evidence': 'ATP-dependent ion pumps essential for regeneration'
-        },
-
-        'Quantum Boundary': {
-            'assumption': 'Classical biochemistry sufficient',
-            'shadow': 'Quantum coherence in DNA and morphogenetic field',
-            'what_we_miss': 'Non-local information, instant coordination',
-            'evidence': 'Regeneration too fast for purely chemical signaling'
+            'shadow': 'Ion pump activity maintaining bioelectric patterns is metabolically costly',
+            'what_we_miss': 'Energy budget for maintaining bioelectric state',
+            'evidence': 'ATP-dependent ion pumps essential for regeneration (established)'
         },
 
         'Geometric Boundary': {
-            'assumption': 'Form emerges from gene regulatory networks',
-            'shadow': 'Form follows geometric field principles (phi, fractals)',
-            'what_we_miss': 'Universal morphological principles across species',
-            'evidence': 'Phi-ratios and fibonacci appear everywhere in biology'
+            'assumption': 'Form emerges from gene regulatory networks and physical constraints',
+            'shadow': 'Geometric patterns (phi, fractals) appear across biological scales',
+            'what_we_miss': 'Whether universal geometric principles reflect shared optimization',
+            'evidence': 'Phi-ratios in phyllotaxis are explained by growth dynamics (established)'
         }
     }
 
@@ -563,7 +545,7 @@ if __name__ == "__main__":
 
     print("\n" + "🪱"*40)
     print("PLANARIA DNA SHADOW ANALYSIS")
-    print("The regeneration mystery that reveals DNA as field antenna")
+    print("Exploring how bioelectric patterns interact with genetic programs")
     print("🪱"*40 + "\n")
 
     # The paradoxes
@@ -586,66 +568,45 @@ if __name__ == "__main__":
     print("="*80)
     print("""
 
-    STANDARD MODEL (fails to explain regeneration):
-    DNA = Static blueprint
-    Cells read genes
-    Form emerges bottom-up
-    Problem: Can't explain how fragments "know" what's missing
+    STANDARD MODEL (well-established, explains most of biology):
+    DNA encodes proteins through gene regulatory networks
+    Signaling cascades provide positional information
+    Development proceeds through cell differentiation programs
 
-    SHADOW MODEL (explains everything):
-    DNA = Dynamic field antenna
-    Cells sense bioelectric/morphogenetic field
-    Form follows geometric field patterns
-    Field stores body plan holographically
+    BIOELECTRIC ADDITION (Levin lab, peer-reviewed):
+    • Voltage gradients provide additional positional information
+    • Gap junction networks coordinate tissue-level electrical signals
+    • Bioelectric state can persist through regeneration cycles
+    • Voltage manipulation alters developmental outcomes
 
-    THE BIOELECTRIC CODE (Levin's discovery):
-    • Voltage gradients store positional information
-    • Gap junction networks compute pattern
-    • Field memory persists through regeneration
-    • Change voltage → change form (override genes!)
+    SPECULATIVE EXTENSIONS (not established):
+    • "DNA as antenna" — metaphorical, not literal biophysics
+    • "Morphogenetic field as blueprint" — bioelectric patterns contribute
+      but are not proven to be the primary organizer
+    • "Holographic information storage" — metaphor for distributed info
+    • "Quantum coherence across body" — contradicts thermal decoherence
 
-    DNA ANTENNA PROPERTIES:
-    • Phi-ratio helix geometry (optimal EM coupling)
-    • Piezoelectric (mechano-electrical)
-    • Conducts electrons, emits biophotons
-    • Quantum coherent base pairs
-    • Responds to fields faster than chemical signals
+    WHAT IS WELL-ESTABLISHED:
+    • Bioelectric signals influence gene expression (voltage-gated TFs)
+    • Gap junction networks affect regeneration outcomes
+    • Two-headed planaria demonstrates stable bioelectric state change
+    • DNA's primary function is information storage and protein coding
 
-    THE MORPHOGENETIC FIELD:
-    • Bioelectric voltage gradients (measured!)
-    • EM standing waves in tissue
-    • Geometric ratios (phi, fibonacci)
-    • Quantum coherence across body
-    • Holographic information storage
+    WHAT IS HYPOTHESIS:
+    • Whether bioelectric patterns are "primary" over genetic programs
+    • Whether geometric ratios reflect a universal coupling mechanism
+    • Whether DNA has functionally relevant EM antenna properties
+    • The specific energy allocations proposed in this framework
 
-    THIS CONNECTS TO EVERYTHING:
+    CONNECTIONS TO OTHER SYSTEMS (speculative):
+    • Phi-ratio patterns appear in many biological systems
+    • Bioelectric signaling is found across organisms
+    • Whether these share a common mechanism is an open question
+    • The mathematical pattern-detection tools work regardless
 
-    Photosynthesis: Chlorophyll antenna couples to light field geometrically
-    Brain: Consciousness couples to EM field, not spikes
-    Hurricanes: Atmospheric energy couples geometrically
-    Planaria: DNA couples to morphogenetic field
-
-    THE PATTERN: Geometric field coupling at ALL scales
-
-    Your FRET framework applies to DNA!
-    • DNA = donor/acceptor in morphogenetic field
-    • Energy "waste" = field coupling work
-    • Geometric organization optimizes information transfer
-    • Multi-scale coherence from molecules to body plan
-
-    The equation boundaries hide:
-
-    1. Information in fields, not just genes
-    1. Top-down causation from field to DNA
-    1. Holographic body plan storage
-    1. Geometric attractors guiding form
-    1. Quantum coherence enabling coordination
-
-    EVOLUTION DIDN'T MAINTAIN DNA FOR 3 BILLION YEARS BECAUSE IT'S WASTEFUL
-    It's the most sophisticated geometric field antenna ever evolved.
-
-    Planaria prove it: Cut them 279 ways, they read the field and rebuild.
-    Not because genes "know" - because DNA LISTENS.
+    Planaria regeneration demonstrates that development involves
+    more than DNA sequence alone. How bioelectric and genetic
+    programs integrate is an exciting area of active research.
     """)
 
     print("="*80)

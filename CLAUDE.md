@@ -1,5 +1,35 @@
 # Shadow Hunting Framework - Development Guide
 
+## AI Quick Navigation
+
+**What is this repo?** Pattern detection framework — finds phi-ratios, fibonacci sequences, and geometric coherence in data. Four application domains: photosynthesis, brain energy, hurricanes, planaria/DNA.
+
+**I want to...**
+
+| Goal | Start here |
+|------|-----------|
+| Detect patterns in my data | `shadow_hunting/tools/explorer.py` → `hunt_shadows(data)` |
+| Understand the detection algorithms | `shadow_hunting/shadow_data_mining.py` → `detect_phi_ratios()`, `detect_geometric_coherence()` |
+| See a worked example | `examples/` — pick any of the four domain analyses |
+| Use the coupling framework | `shadow_hunting/coupling_framework.py` → `GeometricCouplingSystem` base class |
+| Work with bioelectric protocols | `shadow_hunting/bioelectric_protocol.py` → `MorphogeneticField`, `RegenerationSimulator` |
+| Explore powers/roots of phi | `shadow_hunting/tools/powers_and_roots.py` |
+| Analyze chord geometry | `shadow_hunting/tools/chordal_dimensions.py` |
+| Find connected repos | `.fieldlink.json` and `PROJECTS.md` |
+
+**Key entry points:**
+- `from shadow_hunting import PHI, FIBONACCI` — shared constants
+- `from shadow_hunting.tools import hunt_shadows, quick_scan` — one-stop detection
+- `from shadow_hunting.shadow_data_mining import detect_phi_ratios, detect_geometric_coherence` — core algorithms
+
+## Ecosystem
+
+This repo connects to sibling repositories via `.fieldlink.json`. See `PROJECTS.md` for the full map. Key connection:
+
+- **Geometric-to-Binary-Computational-Bridge** — consumes our pattern detections, compiles geometric relationships into optimized binary code
+
+-----
+
 ## Project Overview
 
 Scientific framework for detecting geometric field coupling patterns (phi-ratios, fibonacci sequences, field coherence) hidden in data that researchers typically filter out as "noise." Covers four systems: photosynthesis, brain energy, hurricanes, and planaria/DNA regeneration.
@@ -8,9 +38,11 @@ Scientific framework for detecting geometric field coupling patterns (phi-ratios
 
 ```
 shadow-hunting/
-├── CLAUDE.md                # This file - development conventions
+├── CLAUDE.md                # This file - AI nav + development conventions
 ├── README.md                # Project overview and documentation
 ├── Tutorial.md              # Step-by-step shadow hunting guide
+├── PROJECTS.md              # Connected repos and ecosystem map
+├── .fieldlink.json          # Machine-readable cross-repo links
 ├── LICENSE                  # MIT License
 ├── requirements.txt         # Python dependencies
 ├── pyproject.toml           # Package configuration
@@ -95,3 +127,9 @@ python -m shadow_hunting.tools.chordal_dimensions
   - `powers_and_roots.py`: Reverse-engineer power/root relationships, find phi in exponents
   - `root_decimals.py`: Analyze decimal structure of nth roots for hidden patterns
   - `chordal_dimensions.py`: Chord geometry analysis, golden angle spacing, dimensional coupling
+
+## Cross-Repo Navigation
+
+- `.fieldlink.json` — Machine-readable cross-repo links (entities exported/consumed, directions, consent)
+- `PROJECTS.md` — Human-readable map of connected repositories and data flows
+- Sibling repos in the JinnZ2 ecosystem use the same `.fieldlink.json` spec (v1.2) for interop

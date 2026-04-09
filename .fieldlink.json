@@ -1,0 +1,49 @@
+{
+  "version": "1.2",
+  "repo": "shadow-hunting",
+  "description": "Geometric pattern detection in systems labeled 'inefficient' — phi-ratios, fibonacci sequences, field coherence, bioelectric coupling",
+  "license": "MIT",
+
+  "links": [
+    {
+      "name": "geometric-to-binary",
+      "repo": "https://github.com/JinnZ2/Geometric-to-Binary-Computational-Bridge",
+      "ref": "main",
+      "direction": "bidirectional",
+      "relation": "computation_engine",
+      "description": "Translates geometric patterns discovered here into optimized binary code via GEIS encoding, SIMD acceleration, and symmetry exploitation",
+      "paths": ["shadow_hunting/**/*.py", "examples/**/*.py"],
+      "entities_consumed": ["BRIDGE.BINARY", "GEIS.ENCODING"],
+      "entities_exported": ["SHADOW.PHI_COUPLING", "SHADOW.FIELD_GEOMETRY", "SHADOW.COHERENCE_METRICS"],
+      "consent": { "license": "MIT", "share_ok": true }
+    }
+  ],
+
+  "exports": {
+    "SHADOW.PHI_COUPLING": {
+      "source": "shadow_hunting/shadow_data_mining.py",
+      "functions": ["detect_phi_ratios", "detect_fibonacci_sequences"],
+      "description": "Phi-ratio and fibonacci pattern detection in sequential data"
+    },
+    "SHADOW.FIELD_GEOMETRY": {
+      "source": "shadow_hunting/shadow_data_mining.py",
+      "functions": ["detect_geometric_coherence", "detect_field_coupling_signature"],
+      "description": "Geometric coherence scoring and frequency-domain coupling analysis"
+    },
+    "SHADOW.COHERENCE_METRICS": {
+      "source": "shadow_hunting/coupling_framework.py",
+      "classes": ["GeometricCouplingSystem", "PhotosyntheticCouplingSystem", "AtmosphericCouplingSystem", "MorphogeneticCouplingSystem", "ConsciousnessCouplingSystem"],
+      "description": "Universal coupling framework with energy-mode switching and phi-ratio optimization"
+    },
+    "SHADOW.BIOELECTRIC": {
+      "source": "shadow_hunting/bioelectric_protocol.py",
+      "classes": ["MorphogeneticField", "RegenerationSimulator"],
+      "description": "Bioelectric stimulation protocols based on Levin lab parameters"
+    },
+    "SHADOW.TOOLS": {
+      "source": "shadow_hunting/tools/",
+      "functions": ["hunt_shadows", "quick_scan", "reverse_power", "root_decimal_analysis", "golden_angle_chords"],
+      "description": "Interactive exploration tools for shadow hunting in any dataset"
+    }
+  }
+}
