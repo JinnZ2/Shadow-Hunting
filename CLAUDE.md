@@ -15,18 +15,21 @@
 | Work with bioelectric protocols | `shadow_hunting/bioelectric_protocol.py` → `MorphogeneticField`, `RegenerationSimulator` |
 | Explore powers/roots of phi | `shadow_hunting/tools/powers_and_roots.py` |
 | Analyze chord geometry | `shadow_hunting/tools/chordal_dimensions.py` |
+| Clarify a study's scope / silences | `shadow_hunting/knowledge/` → `liberate(StudyInput)`, `ShadowCatalog`, `Navigator` |
 | Find connected repos | `.fieldlink.json` and `PROJECTS.md` |
 
 **Key entry points:**
 - `from shadow_hunting import PHI, FIBONACCI` — shared constants
 - `from shadow_hunting.tools import hunt_shadows, quick_scan` — one-stop detection
 - `from shadow_hunting.shadow_data_mining import detect_phi_ratios, detect_geometric_coherence` — core algorithms
+- `from shadow_hunting.knowledge import StudyInput, liberate, ShadowCatalog` — scope-clarification pipeline (vendored CC0 from Logic-Ferret)
 
 ## Ecosystem
 
-This repo connects to sibling repositories via `.fieldlink.json`. See `PROJECTS.md` for the full map. Key connection:
+This repo connects to sibling repositories via `.fieldlink.json`. See `PROJECTS.md` for the full map. Key connections:
 
 - **Geometric-to-Binary-Computational-Bridge** — consumes our pattern detections, compiles geometric relationships into optimized binary code
+- **Logic-Ferret** — `knowledge/` folder vendored here (CC0) as `shadow_hunting.knowledge`; scopes claims and catalogs silence patterns
 
 -----
 
@@ -52,12 +55,21 @@ shadow-hunting/
 │   ├── shadow_data_mining.py    # Database catalog + shadow detection algorithms
 │   ├── bioelectric_protocol.py  # Bioelectric tissue regeneration protocols
 │   ├── coupling_framework.py    # Universal geometric coupling framework
-│   └── tools/                   # Interactive exploration tools
-│       ├── __init__.py          # Tool exports (hunt_shadows, quick_scan)
-│       ├── explorer.py          # Unified shadow hunting interface
-│       ├── powers_and_roots.py  # Reverse method of powers and roots
-│       ├── root_decimals.py     # Root of decimals analysis
-│       └── chordal_dimensions.py # Chordal dimension analysis
+│   ├── tools/                   # Interactive exploration tools
+│   │   ├── __init__.py          # Tool exports (hunt_shadows, quick_scan)
+│   │   ├── explorer.py          # Unified shadow hunting interface
+│   │   ├── powers_and_roots.py  # Reverse method of powers and roots
+│   │   ├── root_decimals.py     # Root of decimals analysis
+│   │   └── chordal_dimensions.py # Chordal dimension analysis
+│   └── knowledge/               # Knowledge-liberation pipeline (vendored from Logic-Ferret, CC0)
+│       ├── __init__.py          # Subpackage exports
+│       ├── scope_mapper.py      # Map a study's claimed finding to its actual scope
+│       ├── edge_explorer.py     # Generate questions at 8 edges of the scope boundary
+│       ├── application_builder.py # Derive legitimate applications + misapplications
+│       ├── knowledge_liberation.py # Orchestrator: StudyInput -> liberate()
+│       ├── shadow_catalog.py    # Catalog of recurring silence patterns across studies
+│       ├── recontextualizer.py  # Plug user context into detected silences
+│       └── interactive_navigator.py # Non-linear graph navigation of an analysis session
 │
 └── examples/                # Example analyses and demonstrations
     ├── brain_energy_shadow.py       # Brain energy accounting analysis

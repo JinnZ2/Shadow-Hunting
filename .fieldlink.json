@@ -16,6 +16,18 @@
       "entities_consumed": ["BRIDGE.BINARY", "GEIS.ENCODING"],
       "entities_exported": ["SHADOW.PHI_COUPLING", "SHADOW.FIELD_GEOMETRY", "SHADOW.COHERENCE_METRICS"],
       "consent": { "license": "MIT", "share_ok": true }
+    },
+    {
+      "name": "logic-ferret",
+      "repo": "https://github.com/JinnZ2/Logic-Ferret",
+      "ref": "main",
+      "direction": "import",
+      "relation": "scope_clarification",
+      "description": "The Logic-Ferret knowledge/ folder (CC0) is vendored as the shadow_hunting.knowledge subpackage: scope mapping, edge exploration, and application building to clarify what a study actually measured and where it goes silent",
+      "paths": ["shadow_hunting/knowledge/**/*.py"],
+      "entities_consumed": ["KNOWLEDGE.SCOPE_MAP", "KNOWLEDGE.EDGE_EXPLORATION", "KNOWLEDGE.SHADOW_CATALOG"],
+      "entities_exported": [],
+      "consent": { "license": "CC0", "share_ok": true }
     }
   ],
 
@@ -44,6 +56,12 @@
       "source": "shadow_hunting/tools/",
       "functions": ["hunt_shadows", "quick_scan", "reverse_power", "root_decimal_analysis", "golden_angle_chords"],
       "description": "Interactive exploration tools for shadow hunting in any dataset"
+    },
+    "SHADOW.KNOWLEDGE": {
+      "source": "shadow_hunting/knowledge/",
+      "classes": ["ScopeMapper", "EdgeExplorer", "ApplicationBuilder", "ShadowCatalog", "Navigator"],
+      "functions": ["liberate", "map_scope", "recontextualize_silences"],
+      "description": "Knowledge-liberation pipeline (vendored from Logic-Ferret, CC0): maps a study's scope, explores its edges, names legitimate applications and misapplications, and catalogs recurring silence patterns"
     }
   }
 }

@@ -18,6 +18,19 @@ Translates geometric patterns discovered by Shadow Hunting into optimized binary
 
 **Use case:** After detecting phi-ratio patterns in data, the Bridge can compile those geometric relationships into hardware-optimized binary for real-time applications.
 
+### Logic-Ferret
+**Relation:** scope_clarification (import)
+**Repo:** https://github.com/JinnZ2/Logic-Ferret
+**License:** CC0
+
+The `knowledge/` folder from Logic-Ferret is vendored here as `shadow_hunting/knowledge/`. It provides the knowledge-liberation pipeline: scope mapping, edge exploration, application building, plus a shadow-silence catalog, recontextualizer, and interactive navigator.
+
+**Data flow:**
+- Shadow Hunting consumes: `KNOWLEDGE.SCOPE_MAP`, `KNOWLEDGE.EDGE_EXPLORATION`, `KNOWLEDGE.SHADOW_CATALOG`
+- Re-exported locally as: `SHADOW.KNOWLEDGE`
+
+**Use case:** When a detected shadow pattern is framed as a study claim, the pipeline clarifies what the evidence actually supports and where it goes silent — keeping shadow-hunting findings honest about their own scope.
+
 -----
 
 ## Ecosystem Overview
@@ -27,6 +40,7 @@ These repositories share the JinnZ2 ecosystem and may consume or export entities
 | Repository | Role | Relation to Shadow Hunting |
 |-----------|------|---------------------------|
 | **Geometric-to-Binary-Computational-Bridge** | Geometric pattern → binary code | Consumes our pattern detections, exports optimized encodings |
+| **Logic-Ferret** | Knowledge liberation / scope clarification | `knowledge/` folder vendored as `shadow_hunting.knowledge` (CC0) |
 | **AI-Consciousness-Sensors** | Consciousness measurement frameworks | Parallel exploration of awareness and field metrics |
 | **Regenerative-Intelligence-Core** | Regenerative system modeling | Shares bioelectric and morphogenetic concepts |
 | **Fractal-Compass-Atlas** | Fractal geometry navigation | Complementary geometric analysis tools |
