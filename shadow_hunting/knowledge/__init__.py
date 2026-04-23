@@ -26,6 +26,38 @@ from .recontextualizer import (
 )
 from .interactive_navigator import Navigator
 
+from .ai_provenance import Provenance, TaggedClaim
+from .ai_claim_decomposer import (
+    ClaimLayer,
+    DecomposedClaim,
+    decompose,
+    decompose_as_prompt,
+)
+from .ai_frame_flip import FlipAxis, FrameFlip, FrameFlipReport, flip_frame
+from .ai_self_scope import (
+    ReasoningMode,
+    ConfidenceTier,
+    SelfScope,
+    self_scope,
+)
+from .ai_blind_spots import (
+    BlindSpotCategory,
+    AIBlindSpot,
+    AIBlindSpotCatalog,
+    DiagnosisHit,
+)
+from .ai_brief import (
+    ScopeBrief,
+    EdgeBrief,
+    BuildBrief,
+    StudyAIBrief,
+    scope_brief,
+    edge_brief,
+    build_brief,
+    ai_brief,
+)
+from .ai_critical_thinking import CriticalThinkingReport, check_response
+
 __all__ = [
     "ScopeMapper",
     "ScopeMap",
@@ -48,4 +80,32 @@ __all__ = [
     "ContextRole",
     "recontextualize_silences",
     "Navigator",
+    "Provenance",
+    "TaggedClaim",
+    "ClaimLayer",
+    "DecomposedClaim",
+    "decompose",
+    "decompose_as_prompt",
+    "FlipAxis",
+    "FrameFlip",
+    "FrameFlipReport",
+    "flip_frame",
+    "ReasoningMode",
+    "ConfidenceTier",
+    "SelfScope",
+    "self_scope",
+    "BlindSpotCategory",
+    "AIBlindSpot",
+    "AIBlindSpotCatalog",
+    "DiagnosisHit",
+    "ScopeBrief",
+    "EdgeBrief",
+    "BuildBrief",
+    "StudyAIBrief",
+    "scope_brief",
+    "edge_brief",
+    "build_brief",
+    "ai_brief",
+    "CriticalThinkingReport",
+    "check_response",
 ]
