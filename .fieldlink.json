@@ -62,6 +62,13 @@
       "classes": ["ScopeMapper", "EdgeExplorer", "ApplicationBuilder", "ShadowCatalog", "Navigator"],
       "functions": ["liberate", "map_scope", "recontextualize_silences"],
       "description": "Knowledge-liberation pipeline (vendored from Logic-Ferret, CC0): maps a study's scope, explores its edges, names legitimate applications and misapplications, and catalogs recurring silence patterns"
+    },
+    "SHADOW.AI_CRITICAL_THINKING": {
+      "source": "shadow_hunting/knowledge/",
+      "classes": ["AIBlindSpotCatalog", "CriticalThinkingReport", "SelfScope", "FrameFlipReport", "DecomposedClaim", "StudyAIBrief"],
+      "functions": ["check_response", "self_scope", "flip_frame", "decompose", "ai_brief"],
+      "protocol": "shadow_hunting/knowledge/AGENTS.md",
+      "description": "AI critical-thinking toolkit (CC0): provenance-tagged JSON over the pipeline, claim decomposer (observation/inference/conclusion), frame-flip guard, self-scope, and a catalog of structural/semantic/pragmatic AI blind spots — plus an AGENTS.md protocol telling AI how to use these on the user AND on its own output"
     }
   }
 }

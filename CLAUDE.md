@@ -16,6 +16,12 @@
 | Explore powers/roots of phi | `shadow_hunting/tools/powers_and_roots.py` |
 | Analyze chord geometry | `shadow_hunting/tools/chordal_dimensions.py` |
 | Clarify a study's scope / silences | `shadow_hunting/knowledge/` → `liberate(StudyInput)`, `ShadowCatalog`, `Navigator` |
+| AI: critical-thinking self-check before emitting | `shadow_hunting/knowledge/ai_critical_thinking.py` → `check_response()` |
+| AI: provenance-tagged JSON over the pipeline | `shadow_hunting/knowledge/ai_brief.py` → `ai_brief(study)` |
+| AI: scope your own response | `shadow_hunting/knowledge/ai_self_scope.py` → `self_scope()` |
+| AI: flag sycophantic framing alignment | `shadow_hunting/knowledge/ai_frame_flip.py` → `flip_frame()` |
+| AI: catalog your own structural/semantic/pragmatic blind spots | `shadow_hunting/knowledge/ai_blind_spots.py` → `AIBlindSpotCatalog` |
+| AI: protocol for using this subpackage | `shadow_hunting/knowledge/AGENTS.md` |
 | Find connected repos | `.fieldlink.json` and `PROJECTS.md` |
 
 **Key entry points:**
@@ -23,6 +29,7 @@
 - `from shadow_hunting.tools import hunt_shadows, quick_scan` — one-stop detection
 - `from shadow_hunting.shadow_data_mining import detect_phi_ratios, detect_geometric_coherence` — core algorithms
 - `from shadow_hunting.knowledge import StudyInput, liberate, ShadowCatalog` — scope-clarification pipeline (vendored CC0 from Logic-Ferret)
+- `from shadow_hunting.knowledge import check_response, ai_brief, flip_frame, self_scope, AIBlindSpotCatalog` — AI critical-thinking toolkit (see `shadow_hunting/knowledge/AGENTS.md`)
 
 ## Ecosystem
 
