@@ -22,7 +22,7 @@ NOTE: The efficiency figures and energy allocations in this framework are
 speculative. Standard calorimetry and thermodynamics are well-validated.
 Claims about "field coupling" as a universal mechanism are hypothetical.
 
-Author: Jami (Kavik Ulu) and AI partners - CC0-1.0
+Author: JinnZ2 and AI collaborators - CC0-1.0
 """
 
 import numpy as np

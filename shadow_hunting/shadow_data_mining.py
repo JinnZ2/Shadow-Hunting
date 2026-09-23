@@ -23,7 +23,7 @@ prove "geometric field coupling." These patterns can arise from many causes
 including growth dynamics, optimization under physical constraints, or
 statistical coincidence. Proper null hypothesis testing is needed.
 
-Author: Jami (Kavik Ulu) and AI partners - CC0-1.0
+Author: JinnZ2 and AI collaborators - CC0-1.0
 """
 
 import numpy as np

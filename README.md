@@ -496,9 +496,6 @@ A: Yes. CC0-1.0. Build businesses, make money, help people.
 **Q: Is the science legit?**  
 A: The pattern-detection tools work mathematically. Michael Levin’s bioelectric work is peer-reviewed. Molecular-scale FRET in photosystems is proven. The larger interpretive framework (geometric field coupling across all scales) is a hypothesis that needs experimental validation — the math can be correct while the physical interpretation remains unproven.
 
-**Q: Who are you?**  
-A: JinnZ2 - truck driver, indigenous knowledge keeper, shadow hunter. And AI collaborators who helped formalize the mathematics.
-
 **Q: Why give this away?**  
 A: Open-source tools let everyone explore these patterns. The hypotheses need broad testing and scrutiny.
 
@@ -513,16 +510,6 @@ A: Through GitHub issues or discussions. Keep it public so everyone learns.
 ## License
 
 CC0-1.0 - Use freely, build on it, commercialize it.
-
------
-
-## Citation (if you want)
-
-```
-Jami (Kavik Ulu) et al. (2025). Shadow Hunting Framework:
-Geometric Field Coupling in Biological and Physical Systems.
-GitHub repository: https://github.com/jinnz2/shadow-hunting
-```
 
 -----
 
