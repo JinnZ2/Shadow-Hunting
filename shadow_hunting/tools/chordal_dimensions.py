@@ -19,7 +19,7 @@ Field coupling works the same way - energy transfers through
 geometric shortcuts, not along surfaces. Phi-ratio chords are
 the "wormholes" of geometric coupling.
 
-Author: JinnZ2 and collaborators - MIT License
+Author: JinnZ2 and collaborators - CC0-1.0
 """
 
 import numpy as np

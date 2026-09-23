@@ -21,7 +21,7 @@ SUITABLE FOR EXPLORATION with:
 - Axolotl (bioelectric limb regeneration studies exist)
 - Mammalian wound healing (bioelectric effects published but less characterized)
 
-Author: Jami (Kavik Ulu) and AI partners - MIT License
+Author: Jami (Kavik Ulu) and AI partners - CC0-1.0
 """
 
 import numpy as np

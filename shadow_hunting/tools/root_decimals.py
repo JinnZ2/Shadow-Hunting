@@ -17,7 +17,7 @@ Nature computes with irrational numbers all the time. The decimal
 structure of roots is WHERE the geometric coupling information lives.
 When you see "noise" in decimal places, look for phi.
 
-Author: JinnZ2 and collaborators - MIT License
+Author: JinnZ2 and collaborators - CC0-1.0
 """
 
 import numpy as np

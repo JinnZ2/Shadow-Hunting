@@ -14,7 +14,7 @@ Or in code:
     from shadow_hunting.tools.explorer import hunt_shadows
     results = hunt_shadows(your_data)
 
-Author: JinnZ2 and collaborators - MIT License
+Author: JinnZ2 and collaborators - CC0-1.0
 """
 
 import numpy as np
