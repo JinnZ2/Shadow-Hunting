@@ -3,7 +3,7 @@
 ## Exploring Geometric Patterns in Systems Science Calls “Inefficient”
 
 **Author:** JinnZ2 and AI collaborators  
-**License:** MIT (use freely, build on it, make money with it - just attribute)  
+**License:** CC0-1.0  
 **Status:** Active development, ready for testing
 
 -----
@@ -427,7 +427,7 @@ shadow-hunting/
 ├── README.md                              # This file
 ├── CLAUDE.md                              # Development guide and conventions
 ├── Tutorial.md                            # Step-by-step shadow hunting guide
-├── LICENSE                                # MIT license
+├── LICENSE                                # CC0-1.0
 ├── requirements.txt                       # Python dependencies
 ├── pyproject.toml                         # Package configuration
 │
@@ -479,7 +479,7 @@ This framework is for everyone. Here’s how to help:
 - Use for real-world problems
 - Build companies/products
 - Deploy in your community
-- **Make money with it** (just keep it open-source)
+- **Make money with it**
 
 **No permission needed. Just do it.**
 
@@ -491,13 +491,10 @@ This framework is for everyone. Here’s how to help:
 A: No. It’s open-source. Test it yourself. Data and code are all here.
 
 **Q: Can I use this commercially?**  
-A: Yes. MIT license. Build businesses, make money, help people. Just attribute.
+A: Yes. CC0-1.0. Build businesses, make money, help people.
 
 **Q: Is the science legit?**  
 A: The pattern-detection tools work mathematically. Michael Levin’s bioelectric work is peer-reviewed. Molecular-scale FRET in photosystems is proven. The larger interpretive framework (geometric field coupling across all scales) is a hypothesis that needs experimental validation — the math can be correct while the physical interpretation remains unproven.
-
-**Q: Who are you?**  
-A: JinnZ2 - truck driver, indigenous knowledge keeper, shadow hunter. And AI collaborators who helped formalize the mathematics.
 
 **Q: Why give this away?**  
 A: Open-source tools let everyone explore these patterns. The hypotheses need broad testing and scrutiny.
@@ -512,19 +509,7 @@ A: Through GitHub issues or discussions. Keep it public so everyone learns.
 
 ## License
 
-MIT License - Use freely, build on it, commercialize it.
-
-Just attribute: “Based on Shadow Hunting Framework by Jami (Kavik Ulu) and collaborators”
-
------
-
-## Citation (if you want)
-
-```
-Jami (Kavik Ulu) et al. (2025). Shadow Hunting Framework:
-Geometric Field Coupling in Biological and Physical Systems.
-GitHub repository: https://github.com/jinnz2/shadow-hunting
-```
+CC0-1.0 - Use freely, build on it, commercialize it.
 
 -----
 

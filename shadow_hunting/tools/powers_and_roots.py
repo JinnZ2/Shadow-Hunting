@@ -13,7 +13,7 @@ Tools:
 - Find hidden golden spirals in exponential data
 - Analyze power-law distributions for geometric coupling
 
-Author: JinnZ2 and collaborators - MIT License
+Author: JinnZ2 and collaborators - CC0-1.0
 """
 
 import numpy as np

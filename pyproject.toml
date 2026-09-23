@@ -7,7 +7,7 @@ name = "shadow-hunting"
 version = "0.1.0"
 description = "Finding geometric coupling in systems science calls inefficient"
 readme = "README.md"
-license = "MIT"
+license = "CC0-1.0"
 requires-python = ">=3.9"
 authors = [
     { name = "JinnZ2 and collaborators" },

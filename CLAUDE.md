@@ -53,7 +53,7 @@ shadow-hunting/
 ├── Tutorial.md              # Step-by-step shadow hunting guide
 ├── PROJECTS.md              # Connected repos and ecosystem map
 ├── .fieldlink.json          # Machine-readable cross-repo links
-├── LICENSE                  # MIT License
+├── LICENSE                  # CC0-1.0
 ├── requirements.txt         # Python dependencies
 ├── pyproject.toml           # Package configuration
 │
