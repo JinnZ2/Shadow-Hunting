@@ -152,3 +152,18 @@ python -m shadow_hunting.tools.chordal_dimensions
 - `.fieldlink.json` — Machine-readable cross-repo links (entities exported/consumed, directions, consent)
 - `PROJECTS.md` — Human-readable map of connected repositories and data flows
 - Sibling repos in the JinnZ2 ecosystem use the same `.fieldlink.json` spec (v1.2) for interop
+
+<!-- clone-refspec-note v1.1 -->
+## Cloning and pushing
+Shallow clones are single-branch by default.
+Before pushing any branch other than the default
+branch, run:
+
+    git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
+    git fetch --depth 1
+
+Or clone with: git clone --depth 1 --no-single-branch <url>
+Without this, the first push of a new branch
+fails the tracking-ref check even when the
+commit landed.
+<!-- /clone-refspec-note v1.1 -->
