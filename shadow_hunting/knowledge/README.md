@@ -220,3 +220,38 @@ Anyone reading studies who wants to use them well:
 - **Builders** designing tools or systems that account for scope-dependent findings
 
 The tools are deliberately generic — users supply their own context.
+
+## Finds-by (ALIAS_PROPOSED, 2026-11-09): ai_provenance
+Note 2026-11-09: added by WORK ORDER TOOL FINDER part 1; aliases derived from this
+tool's stated scope only. Index: Simulators `TOOL_FINDER/TOOL_FINDER.md`.
+
+- said vs inferred tagger
+- user said vs template output
+- label which claims came from the user
+- tag templated vs derived content
+- provenance tag on AI output
+- avoided term: AVOIDED_TERM_UNSTATED
+- measures: "Every element emitted by the knowledge pipeline carries a provenance tag so an AI consumer can distinguish what the user said, what a template always says, what a heuristic actually matched, and what was composed from multiple signals."
+- breaks when: NO_STATED_LIMITS
+
+## Finds-by (ALIAS_PROPOSED, 2026-11-09): ai_self_scope
+Note 2026-11-09: added by WORK ORDER TOOL FINDER part 1; aliases derived from this
+tool's stated scope only. Index: Simulators `TOOL_FINDER/TOOL_FINDER.md`.
+
+- scope my own answer
+- publish the boundaries of a response
+- AI overconfidence check
+- avoided term: AVOIDED_TERM_UNSTATED
+- measures: "Result: the AI publishes its own boundaries instead of sounding uniformly confident."
+- breaks when: NO_STATED_LIMITS
+
+## Finds-by (ALIAS_PROPOSED, 2026-11-09): ai_frame_flip
+Note 2026-11-09: added by WORK ORDER TOOL FINDER part 1; aliases derived from this
+tool's stated scope only. Index: Simulators `TOOL_FINDER/TOOL_FINDER.md`.
+
+- sycophantic agreement with user framing
+- counter-frames before endorsing
+- frame swap check
+- avoided term: AVOIDED_TERM_UNSTATED
+- measures: "Frame-flip guard: catch sycophantic alignment before emitting a response."
+- breaks when: NO_STATED_LIMITS
