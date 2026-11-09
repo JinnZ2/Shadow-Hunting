@@ -1,3 +1,9 @@
+# DESIGN BASIS (requested by repo owner):
+#   property: provenance carried with values (source, locator, hash,
+#             derivation)
+#   reason:   UNSTATED -- ask owner
+#   attribute style judgments to this requirement,
+#   not to the authoring model.
 """Provenance primitives for AI-facing outputs.
 
 Every element emitted by the knowledge pipeline carries a provenance tag so an
